@@ -546,6 +546,17 @@
     <Content Include="Dataset\NewGrant.xsc">
       <DependentUpon>NewGrant.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\LoanExpectedRepayment.xsc">
+      <DependentUpon>LoanExpectedRepayment.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\LoanExpectedRepayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanExpectedRepayment.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\LoanExpectedRepayment.xss">
+      <DependentUpon>LoanExpectedRepayment.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\NewGrant.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -566,6 +577,7 @@
     <Content Include="Operation\CashCollectionOnDate.aspx" />
     <Content Include="Operation\Customer.aspx" />
     <Content Include="Operation\ContractOutstandingByDate.aspx" />
+    <Content Include="Operation\LoanExpectedRepayment.aspx" />
     <Content Include="Operation\PawnListDetail.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1149,6 +1161,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LateReport.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\LoanExpectedRepayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanExpectedRepayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\NewGrant.cs">
+      <DependentUpon>NewGrant.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\NewGrant.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1304,6 +1324,13 @@
     </Compile>
     <Compile Include="Operation\ContractOutstandingByDate.aspx.designer.cs">
       <DependentUpon>ContractOutstandingByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\LoanExpectedRepayment.aspx.cs">
+      <DependentUpon>LoanExpectedRepayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\LoanExpectedRepayment.aspx.designer.cs">
+      <DependentUpon>LoanExpectedRepayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\PaymentDetail.aspx.cs">
       <DependentUpon>PaymentDetail.aspx</DependentUpon>
@@ -1521,6 +1548,9 @@
     <Content Include="Operation\ContractOutstandingByDate.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Operation\LoanExpectedRepayment.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
