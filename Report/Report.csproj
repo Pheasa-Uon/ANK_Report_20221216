@@ -557,6 +557,17 @@
     <Content Include="Dataset\LoanExpectedRepayment.xss">
       <DependentUpon>LoanExpectedRepayment.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\LoanOverduebyCO.xsc">
+      <DependentUpon>LoanOverduebyCO.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\LoanOverduebyCO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanOverduebyCO.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\LoanOverduebyCO.xss">
+      <DependentUpon>LoanOverduebyCO.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\NewGrant.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -578,6 +589,7 @@
     <Content Include="Operation\Customer.aspx" />
     <Content Include="Operation\ContractOutstandingByDate.aspx" />
     <Content Include="Operation\LoanExpectedRepayment.aspx" />
+    <Content Include="Operation\LoanOverduebyCO.aspx" />
     <Content Include="Operation\PawnListDetail.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1166,6 +1178,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoanExpectedRepayment.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\LoanOverduebyCO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanOverduebyCO.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\NewGrant.cs">
       <DependentUpon>NewGrant.xsd</DependentUpon>
     </Compile>
@@ -1331,6 +1348,13 @@
     </Compile>
     <Compile Include="Operation\LoanExpectedRepayment.aspx.designer.cs">
       <DependentUpon>LoanExpectedRepayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\LoanOverduebyCO.aspx.cs">
+      <DependentUpon>LoanOverduebyCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\LoanOverduebyCO.aspx.designer.cs">
+      <DependentUpon>LoanOverduebyCO.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\PaymentDetail.aspx.cs">
       <DependentUpon>PaymentDetail.aspx</DependentUpon>
@@ -1551,6 +1575,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Operation\LoanExpectedRepayment.rdlc" />
+    <EmbeddedResource Include="Operation\LoanOverduebyCO.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
