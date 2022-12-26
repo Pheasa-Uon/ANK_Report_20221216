@@ -500,6 +500,17 @@
     <Content Include="Dataset\DisbursementConsolidationAsOf.xss">
       <DependentUpon>DisbursementConsolidationAsOf.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\DisbursementConsolidationYTD.xsc">
+      <DependentUpon>DisbursementConsolidationYTD.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\DisbursementConsolidationYTD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DisbursementConsolidationYTD.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\DisbursementConsolidationYTD.xss">
+      <DependentUpon>DisbursementConsolidationYTD.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\FixedAssetsListing.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -590,6 +601,17 @@
     <Content Include="Dataset\LoanPaidOff.xss">
       <DependentUpon>LoanPaidOff.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\LoanSummariesByCO.xsc">
+      <DependentUpon>LoanSummariesByCO.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\LoanSummariesByCO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanSummariesByCO.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\LoanSummariesByCO.xss">
+      <DependentUpon>LoanSummariesByCO.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\NewGrant.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -611,9 +633,11 @@
     <Content Include="Operation\Customer.aspx" />
     <Content Include="Operation\ContractOutstandingByDate.aspx" />
     <Content Include="Operation\DisbursementConsolidationAsOf.aspx" />
+    <Content Include="Operation\DisbursementConsolidationYTD.aspx" />
     <Content Include="Operation\LoanExpectedRepayment.aspx" />
     <Content Include="Operation\LoanOverduebyCO.aspx" />
     <Content Include="Operation\LoanPaidOff.aspx" />
+    <Content Include="Operation\LoanSummariesByCO.aspx" />
     <Content Include="Operation\PawnListDetail.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1172,6 +1196,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DisbursementConsolidationAsOf.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\DisbursementConsolidationYTD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DisbursementConsolidationYTD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\FixedAssetsListing.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1216,6 +1245,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LoanPaidOff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\LoanSummariesByCO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanSummariesByCO.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\NewGrant.cs">
       <DependentUpon>NewGrant.xsd</DependentUpon>
@@ -1383,6 +1417,13 @@
     <Compile Include="Operation\DisbursementConsolidationAsOf.aspx.designer.cs">
       <DependentUpon>DisbursementConsolidationAsOf.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Operation\DisbursementConsolidationYTD.aspx.cs">
+      <DependentUpon>DisbursementConsolidationYTD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\DisbursementConsolidationYTD.aspx.designer.cs">
+      <DependentUpon>DisbursementConsolidationYTD.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Operation\LoanExpectedRepayment.aspx.cs">
       <DependentUpon>LoanExpectedRepayment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1403,6 +1444,13 @@
     </Compile>
     <Compile Include="Operation\LoanPaidOff.aspx.designer.cs">
       <DependentUpon>LoanPaidOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\LoanSummariesByCO.aspx.cs">
+      <DependentUpon>LoanSummariesByCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\LoanSummariesByCO.aspx.designer.cs">
+      <DependentUpon>LoanSummariesByCO.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\PaymentDetail.aspx.cs">
       <DependentUpon>PaymentDetail.aspx</DependentUpon>
@@ -1623,9 +1671,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Operation\DisbursementConsolidationAsOf.rdlc" />
+    <EmbeddedResource Include="Operation\DisbursementConsolidationYTD.rdlc" />
     <EmbeddedResource Include="Operation\LoanExpectedRepayment.rdlc" />
     <EmbeddedResource Include="Operation\LoanOverduebyCO.rdlc" />
     <EmbeddedResource Include="Operation\LoanPaidOff.rdlc" />
+    <EmbeddedResource Include="Operation\LoanSummariesByCO.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
