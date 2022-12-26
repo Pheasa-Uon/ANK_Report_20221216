@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LoanSummariesByCO" targetNamespace="http://tempuri.org/LoanSummariesByCO.xsd" xmlns:mstns="http://tempuri.org/LoanSummariesByCO.xsd" xmlns="http://tempuri.org/LoanSummariesByCO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LoanSummariesByCO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LoanSummariesByCO" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LoanSummariesByCO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoanSummariesByCO" msprop:Generator_RowClassName="LoanSummariesByCORow" msprop:Generator_RowEvHandlerName="LoanSummariesByCORowChangeEventHandler" msprop:Generator_RowDeletedName="LoanSummariesByCORowDeleted" msprop:Generator_RowDeletingName="LoanSummariesByCORowDeleting" msprop:Generator_RowEvArgName="LoanSummariesByCORowChangeEvent" msprop:Generator_TablePropName="_LoanSummariesByCO" msprop:Generator_RowChangedName="LoanSummariesByCORowChanged" msprop:Generator_UserTableName="LoanSummariesByCO" msprop:Generator_RowChangingName="LoanSummariesByCORowChanging" msprop:Generator_TableClassName="LoanSummariesByCODataTable" msprop:Generator_TableVarName="tableLoanSummariesByCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pawn_officer_id" msprop:Generator_UserColumnName="pawn_officer_id" msprop:Generator_ColumnPropNameInTable="pawn_officer_idColumn" msprop:Generator_ColumnPropNameInRow="pawn_officer_id" msprop:Generator_ColumnVarNameInTable="columnpawn_officer_id" type="xs:string" minOccurs="0" />
+              <xs:element name="co_name" msprop:Generator_UserColumnName="co_name" msprop:Generator_ColumnPropNameInTable="co_nameColumn" msprop:Generator_ColumnPropNameInRow="co_name" msprop:Generator_ColumnVarNameInTable="columnco_name" type="xs:string" minOccurs="0" />
+              <xs:element name="contract_no" msprop:Generator_UserColumnName="contract_no" msprop:Generator_ColumnPropNameInTable="contract_noColumn" msprop:Generator_ColumnPropNameInRow="contract_no" msprop:Generator_ColumnVarNameInTable="columncontract_no" type="xs:string" minOccurs="0" />
+              <xs:element name="customer_id" msprop:Generator_UserColumnName="customer_id" msprop:Generator_ColumnPropNameInTable="customer_idColumn" msprop:Generator_ColumnPropNameInRow="customer_id" msprop:Generator_ColumnVarNameInTable="columncustomer_id" type="xs:string" minOccurs="0" />
+              <xs:element name="disbur_bal" msprop:Generator_UserColumnName="disbur_bal" msprop:Generator_ColumnPropNameInTable="disbur_balColumn" msprop:Generator_ColumnPropNameInRow="disbur_bal" msprop:Generator_ColumnVarNameInTable="columndisbur_bal" type="xs:string" minOccurs="0" />
+              <xs:element name="Avg_Loan_Size" msprop:Generator_UserColumnName="Avg_Loan_Size" msprop:Generator_ColumnPropNameInTable="Avg_Loan_SizeColumn" msprop:Generator_ColumnPropNameInRow="Avg_Loan_Size" msprop:Generator_ColumnVarNameInTable="columnAvg_Loan_Size" type="xs:string" minOccurs="0" />
+              <xs:element name="Avg_Term" msprop:Generator_UserColumnName="Avg_Term" msprop:Generator_ColumnPropNameInTable="Avg_TermColumn" msprop:Generator_ColumnPropNameInRow="Avg_Term" msprop:Generator_ColumnVarNameInTable="columnAvg_Term" type="xs:string" minOccurs="0" />
+              <xs:element name="WIR_Rate" msprop:Generator_UserColumnName="WIR_Rate" msprop:Generator_ColumnPropNameInTable="WIR_RateColumn" msprop:Generator_ColumnPropNameInRow="WIR_Rate" msprop:Generator_ColumnVarNameInTable="columnWIR_Rate" type="xs:string" minOccurs="0" />
+              <xs:element name="interest_rate" msprop:Generator_UserColumnName="interest_rate" msprop:Generator_ColumnPropNameInTable="interest_rateColumn" msprop:Generator_ColumnPropNameInRow="interest_rate" msprop:Generator_ColumnVarNameInTable="columninterest_rate" type="xs:string" minOccurs="0" />
+              <xs:element name="OS_PreMonth" msprop:Generator_UserColumnName="OS_PreMonth" msprop:Generator_ColumnPropNameInTable="OS_PreMonthColumn" msprop:Generator_ColumnPropNameInRow="OS_PreMonth" msprop:Generator_ColumnVarNameInTable="columnOS_PreMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="OS_PreDate" msprop:Generator_UserColumnName="OS_PreDate" msprop:Generator_ColumnPropNameInTable="OS_PreDateColumn" msprop:Generator_ColumnPropNameInRow="OS_PreDate" msprop:Generator_ColumnVarNameInTable="columnOS_PreDate" type="xs:string" minOccurs="0" />
+              <xs:element name="OS_CurrentDate" msprop:Generator_UserColumnName="OS_CurrentDate" msprop:Generator_ColumnPropNameInTable="OS_CurrentDateColumn" msprop:Generator_ColumnPropNameInRow="OS_CurrentDate" msprop:Generator_ColumnVarNameInTable="columnOS_CurrentDate" type="xs:string" minOccurs="0" />
+              <xs:element name="OS_Change" msprop:Generator_UserColumnName="OS_Change" msprop:Generator_ColumnPropNameInTable="OS_ChangeColumn" msprop:Generator_ColumnPropNameInRow="OS_Change" msprop:Generator_ColumnVarNameInTable="columnOS_Change" type="xs:string" minOccurs="0" />
+              <xs:element name="account_paidoff" msprop:Generator_UserColumnName="account_paidoff" msprop:Generator_ColumnPropNameInTable="account_paidoffColumn" msprop:Generator_ColumnPropNameInRow="account_paidoff" msprop:Generator_ColumnVarNameInTable="columnaccount_paidoff" type="xs:string" minOccurs="0" />
+              <xs:element name="principle_paidoff" msprop:Generator_UserColumnName="principle_paidoff" msprop:Generator_ColumnPropNameInTable="principle_paidoffColumn" msprop:Generator_ColumnPropNameInRow="principle_paidoff" msprop:Generator_ColumnVarNameInTable="columnprinciple_paidoff" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpectedPrin" msprop:Generator_UserColumnName="ExpectedPrin" msprop:Generator_ColumnPropNameInTable="ExpectedPrinColumn" msprop:Generator_ColumnPropNameInRow="ExpectedPrin" msprop:Generator_ColumnVarNameInTable="columnExpectedPrin" type="xs:string" minOccurs="0" />
+              <xs:element name="OverdueS30" msprop:Generator_UserColumnName="OverdueS30" msprop:Generator_ColumnPropNameInTable="OverdueS30Column" msprop:Generator_ColumnPropNameInRow="OverdueS30" msprop:Generator_ColumnVarNameInTable="columnOverdueS30" type="xs:string" minOccurs="0" />
+              <xs:element name="OS_S30" msprop:Generator_UserColumnName="OS_S30" msprop:Generator_ColumnPropNameInTable="OS_S30Column" msprop:Generator_ColumnPropNameInRow="OS_S30" msprop:Generator_ColumnVarNameInTable="columnOS_S30" type="xs:string" minOccurs="0" />
+              <xs:element name="ParS30" msprop:Generator_UserColumnName="ParS30" msprop:Generator_ColumnPropNameInTable="ParS30Column" msprop:Generator_ColumnPropNameInRow="ParS30" msprop:Generator_ColumnVarNameInTable="columnParS30" type="xs:string" minOccurs="0" />
+              <xs:element name="OverdueB30" msprop:Generator_UserColumnName="OverdueB30" msprop:Generator_ColumnPropNameInTable="OverdueB30Column" msprop:Generator_ColumnPropNameInRow="OverdueB30" msprop:Generator_ColumnVarNameInTable="columnOverdueB30" type="xs:string" minOccurs="0" />
+              <xs:element name="OS_B30" msprop:Generator_UserColumnName="OS_B30" msprop:Generator_ColumnPropNameInTable="OS_B30Column" msprop:Generator_ColumnPropNameInRow="OS_B30" msprop:Generator_ColumnVarNameInTable="columnOS_B30" type="xs:string" minOccurs="0" />
+              <xs:element name="ParB30" msprop:Generator_UserColumnName="ParB30" msprop:Generator_ColumnPropNameInTable="ParB30Column" msprop:Generator_ColumnPropNameInRow="ParB30" msprop:Generator_ColumnVarNameInTable="columnParB30" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Overdue" msprop:Generator_UserColumnName="Total_Overdue" msprop:Generator_ColumnPropNameInTable="Total_OverdueColumn" msprop:Generator_ColumnPropNameInRow="Total_Overdue" msprop:Generator_ColumnVarNameInTable="columnTotal_Overdue" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_OS_B30" msprop:Generator_UserColumnName="Total_OS_B30" msprop:Generator_ColumnPropNameInTable="Total_OS_B30Column" msprop:Generator_ColumnPropNameInRow="Total_OS_B30" msprop:Generator_ColumnVarNameInTable="columnTotal_OS_B30" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_ParB30" msprop:Generator_UserColumnName="Total_ParB30" msprop:Generator_ColumnPropNameInTable="Total_ParB30Column" msprop:Generator_ColumnPropNameInRow="Total_ParB30" msprop:Generator_ColumnVarNameInTable="columnTotal_ParB30" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpectedDate" msprop:Generator_ColumnPropNameInRow="ExpectedDate" msprop:Generator_ColumnPropNameInTable="ExpectedDateColumn" msprop:Generator_ColumnVarNameInTable="columnExpectedDate" msprop:Generator_UserColumnName="ExpectedDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
