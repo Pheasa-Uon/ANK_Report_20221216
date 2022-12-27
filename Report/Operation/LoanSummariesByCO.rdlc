@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -7,6 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>3b4716ac-ddfa-4f4b-a0ff-f3114f69853f</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -426,6 +427,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -461,6 +463,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -496,6 +499,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -533,6 +537,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -568,6 +573,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -603,6 +609,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -638,6 +645,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -673,6 +681,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -711,6 +720,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -752,6 +762,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -789,6 +800,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -824,6 +836,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -861,6 +874,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -898,6 +912,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -940,6 +955,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -975,6 +991,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1010,6 +1027,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1045,6 +1063,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1080,6 +1099,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1115,6 +1135,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1150,6 +1171,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1185,6 +1207,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1220,6 +1243,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1255,6 +1279,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1290,6 +1315,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1325,6 +1351,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1360,6 +1387,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1395,6 +1423,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1430,6 +1459,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1465,6 +1495,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1500,6 +1531,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1535,6 +1567,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1570,6 +1603,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1605,6 +1639,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1640,6 +1675,7 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>Gold</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -3010,7 +3046,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.90833in</Height>
+        <Height>4.13333in</Height>
         <Style />
       </Body>
       <Width>22.62198in</Width>
