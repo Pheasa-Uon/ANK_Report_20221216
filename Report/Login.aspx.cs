@@ -14,6 +14,9 @@ namespace Report
                 {
                     Response.Redirect("~/Dashboard");
                 }
+
+                txtUsername.Text = "super-admin";
+                txtPassword.Text = "Admin@123";
             }
         }
 

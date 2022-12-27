@@ -25,7 +25,8 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtUsername" CssClass="text-danger" Text="Please enter username" Display="Dynamic"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
-                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                    <%--<asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>--%>
+                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtPassword" CssClass="text-danger" Text="Please enter password" Display="Dynamic"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
