@@ -3835,7 +3835,7 @@
                                                                       <Paragraph>
                                                                         <TextRuns>
                                                                           <TextRun>
-                                                                            <Value>=SUM(MAX(Fields!CRPre.Value, "contract_no") + MAX(Fields!CRCur.Value, "contract_no"))</Value>
+                                                                            <Value>=SUM(MAX(CDbl(Fields!CRPre.Value), "contract_no") + MAX(CDbl(Fields!CRCur.Value), "contract_no"))</Value>
                                                                             <Style>
                                                                               <FontWeight>Bold</FontWeight>
                                                                               <Format>#,0.00;(#,0.00);'-'</Format>
@@ -4376,7 +4376,7 @@
                                                                   <Paragraph>
                                                                     <TextRuns>
                                                                       <TextRun>
-                                                                        <Value>=SUM(MAX(Fields!CRPre.Value, "contract_no") + MAX(Fields!CRCur.Value, "contract_no"))</Value>
+                                                                        <Value>=SUM(MAX(CDbl(Fields!CRPre.Value), "contract_no") + MAX(CDbl(Fields!CRCur.Value), "contract_no"))</Value>
                                                                         <Style>
                                                                           <FontSize>11pt</FontSize>
                                                                           <FontWeight>Bold</FontWeight>

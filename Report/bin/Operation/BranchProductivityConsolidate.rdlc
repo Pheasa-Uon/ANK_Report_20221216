@@ -2291,7 +2291,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!redeem_interest_pay.Value + Fields!redeem_early.Value)</Value>
+                                  <Value>=Sum(CDbl(Fields!redeem_interest_pay.Value) + CDbl(Fields!redeem_early.Value))</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <Format>#,0.00;(#,0.00).'-'</Format>
@@ -2587,7 +2587,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!new_amt.Value + Fields!rn_total_amt.Value)</Value>
+                                  <Value>=Sum(CDbl(Fields!new_amt.Value) + CDbl(Fields!rn_total_amt.Value))</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <Format>#,0.00;(#,0.00).'-'</Format>
@@ -2624,7 +2624,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!new_interest_pay.Value + Fields!redeem_interest_pay.Value + Fields!redeem_early.Value + Fields!rn_total_interest_pay.Value)</Value>
+                                  <Value>=Sum(CDbl(Fields!new_interest_pay.Value) + CDbl(Fields!redeem_interest_pay.Value + Fields!redeem_early.Value + Fields!rn_total_interest_pay.Value))</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <Format>#,0.00;(#,0.00).'-'</Format>
@@ -3556,7 +3556,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!redeem_interest_pay.Value + Fields!redeem_early.Value)</Value>
+                                  <Value>=Sum(CDbl(Fields!redeem_interest_pay.Value) + CDbl(Fields!redeem_early.Value))</Value>
                                   <Style>
                                     <FontStyle>Italic</FontStyle>
                                     <FontFamily>Gill Sans MT</FontFamily>
@@ -3876,7 +3876,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=SUM(Fields!new_amt.Value + Fields!rn_total_amt.Value)</Value>
+                                  <Value>=SUM(CDbl(Fields!new_amt.Value) + CDbl(Fields!rn_total_amt.Value))</Value>
                                   <Style>
                                     <FontStyle>Italic</FontStyle>
                                     <FontFamily>Gill Sans MT</FontFamily>
@@ -3916,7 +3916,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=SUM(Fields!new_interest_pay.Value + Fields!redeem_interest_pay.Value + Fields!redeem_early.Value + Fields!rn_total_interest_pay.Value)</Value>
+                                  <Value>=SUM(CDbl(Fields!new_interest_pay.Value) + CDbl(Fields!redeem_interest_pay.Value + Fields!redeem_early.Value + Fields!rn_total_interest_pay.Value))</Value>
                                   <Style>
                                     <FontStyle>Italic</FontStyle>
                                     <FontFamily>Gill Sans MT</FontFamily>

@@ -162,6 +162,7 @@
     <Content Include="Accounting\AccrualInterest.aspx" />
     <Content Include="Accounting\AccrualInterestOnPawn.aspx" />
     <Content Include="Accounting\BalanceSheet.aspx" />
+    <Content Include="Accounting\CaseAvailableBalance.aspx" />
     <Content Include="Accounting\CashCollectionOnDate.aspx" />
     <Content Include="Accounting\CashConsolidate.aspx" />
     <Content Include="Accounting\CashEndingBalance.aspx" />
@@ -343,6 +344,17 @@
     </Content>
     <Content Include="Dataset\CashCollectionConsolidate.xsc">
       <DependentUpon>CashCollectionConsolidate.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\CaseAvailableBalance.xsc">
+      <DependentUpon>CaseAvailableBalance.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\CaseAvailableBalance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CaseAvailableBalance.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\CaseAvailableBalance.xss">
+      <DependentUpon>CaseAvailableBalance.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\CashCollectionConsolidate.xsd">
       <SubType>Designer</SubType>
@@ -962,6 +974,13 @@
     <Compile Include="Accounting\BalanceSheet.aspx.designer.cs">
       <DependentUpon>BalanceSheet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\CaseAvailableBalance.aspx.cs">
+      <DependentUpon>CaseAvailableBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\CaseAvailableBalance.aspx.designer.cs">
+      <DependentUpon>CaseAvailableBalance.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\CashCollectionOnDate.aspx.cs">
       <DependentUpon>CashCollectionOnDate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1114,6 +1133,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BranchProductivityConsolidate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\CaseAvailableBalance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseAvailableBalance.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\CashCollectionConsolidate.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1670,6 +1694,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Accounting\CaseAvailableBalance.rdlc" />
     <EmbeddedResource Include="Operation\DisbursementConsolidationAsOf.rdlc" />
     <EmbeddedResource Include="Operation\DisbursementConsolidationYTD.rdlc" />
     <EmbeddedResource Include="Operation\LoanExpectedRepayment.rdlc" />
