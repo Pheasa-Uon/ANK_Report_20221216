@@ -270,7 +270,9 @@
     <Content Include="Accounting\CashCollectionOnDate.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Accounting\TrialBalanceTotalByClass.rdlc" />
+    <Content Include="Accounting\TrialBalanceTotalByClass.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Dataset\AccrualDetail.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1694,13 +1696,27 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Accounting\CaseAvailableBalance.rdlc" />
-    <EmbeddedResource Include="Operation\DisbursementConsolidationAsOf.rdlc" />
-    <EmbeddedResource Include="Operation\DisbursementConsolidationYTD.rdlc" />
-    <EmbeddedResource Include="Operation\LoanExpectedRepayment.rdlc" />
-    <EmbeddedResource Include="Operation\LoanOverduebyCO.rdlc" />
-    <EmbeddedResource Include="Operation\LoanPaidOff.rdlc" />
-    <EmbeddedResource Include="Operation\LoanSummariesByCO.rdlc" />
+    <Content Include="Accounting\CaseAvailableBalance.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\DisbursementConsolidationAsOf.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\DisbursementConsolidationYTD.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\LoanExpectedRepayment.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\LoanOverduebyCO.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\LoanPaidOff.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\LoanSummariesByCO.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
