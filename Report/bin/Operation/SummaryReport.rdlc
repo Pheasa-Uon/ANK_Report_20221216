@@ -1631,7 +1631,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=SUM(Fields!new_amt.Value + Fields!renew_amt.Value)</Value>
+                                  <Value>=SUM(CDbl(Fields!new_amt.Value) + CDbl(Fields!renew_amt.Value))</Value>
                                   <Style>
                                     <FontStyle>Italic</FontStyle>
                                     <FontFamily>Gill Sans MT</FontFamily>
