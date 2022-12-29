@@ -1694,24 +1694,24 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Accounting\CaseAvailableBalance.rdlc">
+    <Content Include="Accounting\CaseAvailableBalance.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Operation\DisbursementConsolidationAsOf.rdlc">
+    </Content>
+    <Content Include="Operation\DisbursementConsolidationAsOf.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Operation\DisbursementConsolidationYTD.rdlc">
+    </Content>
+    <Content Include="Operation\DisbursementConsolidationYTD.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Operation\LoanExpectedRepayment.rdlc">
+    </Content>
+    <Content Include="Operation\LoanExpectedRepayment.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Operation\LoanOverduebyCO.rdlc">
+    </Content>
+    <Content Include="Operation\LoanOverduebyCO.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Operation\LoanPaidOff.rdlc">
+    </Content>
+    <Content Include="Operation\LoanPaidOff.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Content>
     <Content Include="Operation\LoanSummariesByCO.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
