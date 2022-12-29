@@ -2544,7 +2544,6 @@
                                   <Value>=Avg(Fields!WIR_Rate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
