@@ -790,6 +790,7 @@
                                   <Value>=DateAdd(DateInterval.Day, +1,Parameters!AsOfDate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>dd-MMM-yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>

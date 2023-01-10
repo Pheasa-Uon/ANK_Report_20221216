@@ -790,6 +790,7 @@
                                   <Value>=DateAdd(DateInterval.Day, +1,Parameters!AsOfDate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>dd-MMM-yyyy</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2543,6 +2544,7 @@
                                   <Value>=Avg(Fields!WIR_Rate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>

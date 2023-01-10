@@ -913,7 +913,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=SUM(iif(Fields!currency_id.Value=2, CDbl(Fields!current_bal.Value), 0))</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -947,7 +949,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=SUM(iif(Fields!currency_id.Value=2, CDbl(Fields!total_bal.Value), 0))</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -1092,7 +1096,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=SUM(iif(Fields!currency_id.Value=1, CDbl(Fields!current_bal.Value), 0))</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -1126,7 +1132,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=SUM(iif(Fields!currency_id.Value=1, CDbl(Fields!total_bal.Value), 0))</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>

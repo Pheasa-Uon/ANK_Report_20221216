@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContractOutstandingByDate.aspx.cs" Inherits="Report.Operation.LoanOutstandingByDate" %>
+﻿<%@ Page Title="Contract Outstanding Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContractOutstandingByDate.aspx.cs" Inherits="Report.Operation.LoanOutstandingByDate" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
