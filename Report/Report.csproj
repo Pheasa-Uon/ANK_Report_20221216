@@ -270,7 +270,9 @@
     <Content Include="Accounting\CashCollectionOnDate.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Accounting\TrialBalanceTotalByClass.rdlc" />
+    <Content Include="Accounting\TrialBalanceTotalByClass.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Dataset\AccrualDetail.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
