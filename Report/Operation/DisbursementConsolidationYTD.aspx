@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DisbursementConsolidationYTD.aspx.cs" Inherits="Report.Operation.DisbursementConsolidationYTD" %>
+﻿<%@ Page Title="Disbursement Consolidation YTD" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DisbursementConsolidationYTD.aspx.cs" Inherits="Report.Operation.DisbursementConsolidationYTD" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
