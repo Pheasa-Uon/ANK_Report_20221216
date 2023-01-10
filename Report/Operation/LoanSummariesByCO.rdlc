@@ -1825,7 +1825,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!disbur_bal.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1855,7 +1857,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Avg_Loan_Size.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1885,7 +1889,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Avg_Term.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1915,7 +1921,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!WIR_Rate.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1945,7 +1953,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OS_PreMonth.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1975,7 +1985,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OS_PreDate.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2005,7 +2017,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OS_CurrentDate.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2035,7 +2049,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OS_Change.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2095,7 +2111,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!principle_paidoff.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2125,7 +2143,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ExpectedPrin.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2155,7 +2175,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OverdueS30.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2185,7 +2207,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ParS30.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2215,7 +2239,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OverdueB30.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2245,7 +2271,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ParB30.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2275,7 +2303,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Total_Overdue.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2305,7 +2335,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Total_ParB30.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2445,6 +2477,7 @@
                                   <Value>=Sum(Fields!disbur_bal.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2478,6 +2511,7 @@
                                   <Value>=Sum(Fields!Avg_Loan_Size.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2511,6 +2545,7 @@
                                   <Value>=Avg(Fields!Avg_Term.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2578,6 +2613,7 @@
                                   <Value>=Sum(Fields!OS_PreMonth.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2611,6 +2647,7 @@
                                   <Value>=Sum(Fields!OS_PreDate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2644,6 +2681,7 @@
                                   <Value>=Sum(Fields!OS_CurrentDate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2743,6 +2781,7 @@
                                   <Value>=Sum(Fields!principle_paidoff.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2776,6 +2815,7 @@
                                   <Value>=Sum(Fields!ExpectedPrin.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2809,6 +2849,7 @@
                                   <Value>=Sum(Fields!OverdueS30.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2842,6 +2883,7 @@
                                   <Value>=Avg(Fields!ParS30.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2875,6 +2917,7 @@
                                   <Value>=Sum(Fields!OverdueB30.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2908,6 +2951,7 @@
                                   <Value>=Avg(Fields!ParB30.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2941,6 +2985,7 @@
                                   <Value>=Sum(Fields!Total_Overdue.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2974,6 +3019,7 @@
                                   <Value>=Avg(Fields!Total_ParB30.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
