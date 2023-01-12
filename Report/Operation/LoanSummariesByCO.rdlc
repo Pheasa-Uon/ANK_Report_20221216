@@ -2508,7 +2508,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Avg_Loan_Size.Value)</Value>
+                                  <Value>=Avg(Fields!Avg_Loan_Size.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>n2</Format>

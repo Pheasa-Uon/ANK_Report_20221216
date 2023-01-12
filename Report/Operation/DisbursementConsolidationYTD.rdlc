@@ -1338,7 +1338,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!interest_rate.Value)</Value>
+                                  <Value>=Avg(Fields!interest_rate.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -1371,7 +1371,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!num_of_install.Value)</Value>
+                                  <Value>=Avg(Fields!num_of_install.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
