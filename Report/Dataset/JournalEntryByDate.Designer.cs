@@ -317,6 +317,10 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnlast_updated;
             
+            private global::System.Data.DataColumn columnDR_USD;
+            
+            private global::System.Data.DataColumn columnCR_USD;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public JournalEntryByDateDatasetDataTable() {
@@ -504,6 +508,22 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DR_USDColumn {
+                get {
+                    return this.columnDR_USD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CR_USDColumn {
+                get {
+                    return this.columnCR_USD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -558,7 +578,9 @@ namespace Report.Dataset {
                         string lob_name, 
                         string contract_no, 
                         string customer_name, 
-                        string last_updated) {
+                        string last_updated, 
+                        string DR_USD, 
+                        string CR_USD) {
                 JournalEntryByDateDatasetRow rowJournalEntryByDateDatasetRow = ((JournalEntryByDateDatasetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         DR,
@@ -579,7 +601,9 @@ namespace Report.Dataset {
                         lob_name,
                         contract_no,
                         customer_name,
-                        last_updated};
+                        last_updated,
+                        DR_USD,
+                        CR_USD};
                 rowJournalEntryByDateDatasetRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowJournalEntryByDateDatasetRow);
                 return rowJournalEntryByDateDatasetRow;
@@ -621,6 +645,8 @@ namespace Report.Dataset {
                 this.columncontract_no = base.Columns["contract_no"];
                 this.columncustomer_name = base.Columns["customer_name"];
                 this.columnlast_updated = base.Columns["last_updated"];
+                this.columnDR_USD = base.Columns["DR_USD"];
+                this.columnCR_USD = base.Columns["CR_USD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -664,6 +690,10 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columncustomer_name);
                 this.columnlast_updated = new global::System.Data.DataColumn("last_updated", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlast_updated);
+                this.columnDR_USD = new global::System.Data.DataColumn("DR_USD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDR_USD);
+                this.columnCR_USD = new global::System.Data.DataColumn("CR_USD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCR_USD);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1115,6 +1145,38 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DR_USD {
+                get {
+                    try {
+                        return ((string)(this[this.tableJournalEntryByDateDataset.DR_USDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DR_USD\' in table \'JournalEntryByDateDataset\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableJournalEntryByDateDataset.DR_USDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CR_USD {
+                get {
+                    try {
+                        return ((string)(this[this.tableJournalEntryByDateDataset.CR_USDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CR_USD\' in table \'JournalEntryByDateDataset\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableJournalEntryByDateDataset.CR_USDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDRNull() {
                 return this.IsNull(this.tableJournalEntryByDateDataset.DRColumn);
             }
@@ -1339,6 +1401,30 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setlast_updatedNull() {
                 this[this.tableJournalEntryByDateDataset.last_updatedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDR_USDNull() {
+                return this.IsNull(this.tableJournalEntryByDateDataset.DR_USDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDR_USDNull() {
+                this[this.tableJournalEntryByDateDataset.DR_USDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCR_USDNull() {
+                return this.IsNull(this.tableJournalEntryByDateDataset.CR_USDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCR_USDNull() {
+                this[this.tableJournalEntryByDateDataset.CR_USDColumn] = global::System.Convert.DBNull;
             }
         }
         

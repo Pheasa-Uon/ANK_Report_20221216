@@ -65,8 +65,8 @@ namespace Report.Accounting
 
             List<Procedure> procedureList = new List<Procedure>();
             procedureList.Add(item: new Procedure() { field_name = "@pBranch", sql_db_type = MySqlDbType.VarChar, value_name = ddBranchName.SelectedItem.Value });
-            procedureList.Add(item: new Procedure() { field_name = "@FromDate", sql_db_type = MySqlDbType.Date, value_name = dtpFromDate });
-            procedureList.Add(item: new Procedure() { field_name = "@ToDate", sql_db_type = MySqlDbType.Date, value_name = dtpToDate });
+            procedureList.Add(item: new Procedure() { field_name = "@FromDate", sql_db_type = MySqlDbType.Date, value_name = dtpFromDate.Text });
+            procedureList.Add(item: new Procedure() { field_name = "@ToDate", sql_db_type = MySqlDbType.Date, value_name = dtpToDate.Text });
             procedureList.Add(item: new Procedure() { field_name = "@TransactionType", sql_db_type = MySqlDbType.VarChar, value_name = ddTransactionType.SelectedItem.Value });
 
             DataTable journalEntryDT = db.getProcedureDataTable(sql, procedureList);
