@@ -305,6 +305,8 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnparent_gl_name;
             
+            private global::System.Data.DataColumn columnBAL_USD;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public TrialBalanceDatasetDataTable() {
@@ -444,6 +446,14 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BAL_USDColumn {
+                get {
+                    return this.columnBAL_USD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -479,7 +489,7 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TrialBalanceDatasetRow AddTrialBalanceDatasetRow(string currency, string gl, string id, string gl_name, string side, string O_DR, string O_CR, string M_DR, string M_CR, string C_DR, string C_CR, string parent_gl, string parent_gl_name) {
+            public TrialBalanceDatasetRow AddTrialBalanceDatasetRow(string currency, string gl, string id, string gl_name, string side, string O_DR, string O_CR, string M_DR, string M_CR, string C_DR, string C_CR, string parent_gl, string parent_gl_name, string BAL_USD) {
                 TrialBalanceDatasetRow rowTrialBalanceDatasetRow = ((TrialBalanceDatasetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         currency,
@@ -494,7 +504,8 @@ namespace Report.Dataset {
                         C_DR,
                         C_CR,
                         parent_gl,
-                        parent_gl_name};
+                        parent_gl_name,
+                        BAL_USD};
                 rowTrialBalanceDatasetRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTrialBalanceDatasetRow);
                 return rowTrialBalanceDatasetRow;
@@ -530,6 +541,7 @@ namespace Report.Dataset {
                 this.columnC_CR = base.Columns["C_CR"];
                 this.columnparent_gl = base.Columns["parent_gl"];
                 this.columnparent_gl_name = base.Columns["parent_gl_name"];
+                this.columnBAL_USD = base.Columns["BAL_USD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -561,6 +573,8 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columnparent_gl);
                 this.columnparent_gl_name = new global::System.Data.DataColumn("parent_gl_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnparent_gl_name);
+                this.columnBAL_USD = new global::System.Data.DataColumn("BAL_USD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBAL_USD);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -911,6 +925,22 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BAL_USD {
+                get {
+                    try {
+                        return ((string)(this[this.tableTrialBalanceDataset.BAL_USDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BAL_USD\' in table \'TrialBalanceDataset\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTrialBalanceDataset.BAL_USDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IscurrencyNull() {
                 return this.IsNull(this.tableTrialBalanceDataset.currencyColumn);
             }
@@ -1063,6 +1093,18 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setparent_gl_nameNull() {
                 this[this.tableTrialBalanceDataset.parent_gl_nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBAL_USDNull() {
+                return this.IsNull(this.tableTrialBalanceDataset.BAL_USDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBAL_USDNull() {
+                this[this.tableTrialBalanceDataset.BAL_USDColumn] = global::System.Convert.DBNull;
             }
         }
         
