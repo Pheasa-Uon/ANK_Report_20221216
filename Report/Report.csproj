@@ -618,6 +618,17 @@
     <Content Include="Dataset\LoanSummariesByCO.xsc">
       <DependentUpon>LoanSummariesByCO.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\LoanScheduleRepayment.xsc">
+      <DependentUpon>LoanScheduleRepayment.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\LoanScheduleRepayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanScheduleRepayment.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\LoanScheduleRepayment.xss">
+      <DependentUpon>LoanScheduleRepayment.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\LoanSummariesByCO.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1273,6 +1284,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoanPaidOff.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\LoanScheduleRepayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanScheduleRepayment.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\LoanSummariesByCO.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1725,6 +1741,9 @@
     <Content Include="Operation\LoanSummariesByCO.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Operation\LoanScheduleRepayment.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,16 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
-<xs:schema id="LoanScheduleRepayment" 
-                  targetNamespace="http://tempuri.org/LoanScheduleRepayment.xsd"
-                  elementFormDefault="qualified"
-                  attributeFormDefault="qualified"
-                  xmlns="http://tempuri.org/LoanScheduleRepayment.xsd"
-                  xmlns:mstns="http://tempuri.org/LoanScheduleRepayment.xsd"
-                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
-                  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-    <xs:element name="LoanScheduleRepayment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true">
-        <xs:complexType>
-            <xs:choice minOccurs="0" maxOccurs="unbounded"></xs:choice>
-        </xs:complexType>
-    </xs:element>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LoanScheduleRepayment" targetNamespace="http://tempuri.org/LoanScheduleRepayment.xsd" xmlns:mstns="http://tempuri.org/LoanScheduleRepayment.xsd" xmlns="http://tempuri.org/LoanScheduleRepayment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LoanScheduleRepayment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="LoanScheduleRepayment" msprop:Generator_DataSetName="LoanScheduleRepayment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoanScheduleRepayment" msprop:Generator_RowEvHandlerName="LoanScheduleRepaymentRowChangeEventHandler" msprop:Generator_RowDeletedName="LoanScheduleRepaymentRowDeleted" msprop:Generator_RowDeletingName="LoanScheduleRepaymentRowDeleting" msprop:Generator_RowEvArgName="LoanScheduleRepaymentRowChangeEvent" msprop:Generator_TablePropName="_LoanScheduleRepayment" msprop:Generator_RowChangedName="LoanScheduleRepaymentRowChanged" msprop:Generator_RowChangingName="LoanScheduleRepaymentRowChanging" msprop:Generator_TableClassName="LoanScheduleRepaymentDataTable" msprop:Generator_RowClassName="LoanScheduleRepaymentRow" msprop:Generator_TableVarName="tableLoanScheduleRepayment" msprop:Generator_UserTableName="LoanScheduleRepayment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contract_no" msprop:Generator_ColumnPropNameInRow="contract_no" msprop:Generator_ColumnPropNameInTable="contract_noColumn" msprop:Generator_ColumnVarNameInTable="columncontract_no" msprop:Generator_UserColumnName="contract_no" type="xs:string" minOccurs="0" />
+              <xs:element name="customer_no" msprop:Generator_ColumnPropNameInRow="customer_no" msprop:Generator_ColumnPropNameInTable="customer_noColumn" msprop:Generator_ColumnVarNameInTable="columncustomer_no" msprop:Generator_UserColumnName="customer_no" type="xs:string" minOccurs="0" />
+              <xs:element name="num_of_install" msprop:Generator_ColumnPropNameInRow="num_of_install" msprop:Generator_ColumnPropNameInTable="num_of_installColumn" msprop:Generator_ColumnVarNameInTable="columnnum_of_install" msprop:Generator_UserColumnName="num_of_install" type="xs:string" minOccurs="0" />
+              <xs:element name="disbursement_date" msprop:Generator_ColumnPropNameInRow="disbursement_date" msprop:Generator_ColumnPropNameInTable="disbursement_dateColumn" msprop:Generator_ColumnVarNameInTable="columndisbursement_date" msprop:Generator_UserColumnName="disbursement_date" type="xs:string" minOccurs="0" />
+              <xs:element name="interest_rate" msprop:Generator_ColumnPropNameInRow="interest_rate" msprop:Generator_ColumnPropNameInTable="interest_rateColumn" msprop:Generator_ColumnVarNameInTable="columninterest_rate" msprop:Generator_UserColumnName="interest_rate" type="xs:string" minOccurs="0" />
+              <xs:element name="cycle_num" msprop:Generator_ColumnPropNameInRow="cycle_num" msprop:Generator_ColumnPropNameInTable="cycle_numColumn" msprop:Generator_ColumnVarNameInTable="columncycle_num" msprop:Generator_UserColumnName="cycle_num" type="xs:string" minOccurs="0" />
+              <xs:element name="customer_name_kh" msprop:Generator_ColumnPropNameInRow="customer_name_kh" msprop:Generator_ColumnPropNameInTable="customer_name_khColumn" msprop:Generator_ColumnVarNameInTable="columncustomer_name_kh" msprop:Generator_UserColumnName="customer_name_kh" type="xs:string" minOccurs="0" />
+              <xs:element name="co_pawn_name" msprop:Generator_ColumnPropNameInRow="co_pawn_name" msprop:Generator_ColumnPropNameInTable="co_pawn_nameColumn" msprop:Generator_ColumnVarNameInTable="columnco_pawn_name" msprop:Generator_UserColumnName="co_pawn_name" type="xs:string" minOccurs="0" />
+              <xs:element name="expired_date" msprop:Generator_ColumnPropNameInRow="expired_date" msprop:Generator_ColumnPropNameInTable="expired_dateColumn" msprop:Generator_ColumnVarNameInTable="columnexpired_date" msprop:Generator_UserColumnName="expired_date" type="xs:string" minOccurs="0" />
+              <xs:element name="repayment_mode_name" msprop:Generator_ColumnPropNameInRow="repayment_mode_name" msprop:Generator_ColumnPropNameInTable="repayment_mode_nameColumn" msprop:Generator_ColumnVarNameInTable="columnrepayment_mode_name" msprop:Generator_UserColumnName="repayment_mode_name" type="xs:string" minOccurs="0" />
+              <xs:element name="pawn_price" msprop:Generator_ColumnPropNameInRow="pawn_price" msprop:Generator_ColumnPropNameInTable="pawn_priceColumn" msprop:Generator_ColumnVarNameInTable="columnpawn_price" msprop:Generator_UserColumnName="pawn_price" type="xs:string" minOccurs="0" />
+              <xs:element name="currency_kh" msprop:Generator_ColumnPropNameInRow="currency_kh" msprop:Generator_ColumnPropNameInTable="currency_khColumn" msprop:Generator_ColumnVarNameInTable="columncurrency_kh" msprop:Generator_UserColumnName="currency_kh" type="xs:string" minOccurs="0" />
+              <xs:element name="address" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_UserColumnName="address" type="xs:string" minOccurs="0" />
+              <xs:element name="order_no" msprop:Generator_ColumnPropNameInRow="order_no" msprop:Generator_ColumnPropNameInTable="order_noColumn" msprop:Generator_ColumnVarNameInTable="columnorder_no" msprop:Generator_UserColumnName="order_no" type="xs:string" minOccurs="0" />
+              <xs:element name="due_day_name" msprop:Generator_ColumnPropNameInRow="due_day_name" msprop:Generator_ColumnPropNameInTable="due_day_nameColumn" msprop:Generator_ColumnVarNameInTable="columndue_day_name" msprop:Generator_UserColumnName="due_day_name" type="xs:string" minOccurs="0" />
+              <xs:element name="due_day_name_kh" msprop:Generator_ColumnPropNameInRow="due_day_name_kh" msprop:Generator_ColumnPropNameInTable="due_day_name_khColumn" msprop:Generator_ColumnVarNameInTable="columndue_day_name_kh" msprop:Generator_UserColumnName="due_day_name_kh" type="xs:string" minOccurs="0" />
+              <xs:element name="due_date" msprop:Generator_ColumnPropNameInRow="due_date" msprop:Generator_ColumnPropNameInTable="due_dateColumn" msprop:Generator_ColumnVarNameInTable="columndue_date" msprop:Generator_UserColumnName="due_date" type="xs:string" minOccurs="0" />
+              <xs:element name="num_of_day" msprop:Generator_ColumnPropNameInRow="num_of_day" msprop:Generator_ColumnPropNameInTable="num_of_dayColumn" msprop:Generator_ColumnVarNameInTable="columnnum_of_day" msprop:Generator_UserColumnName="num_of_day" type="xs:string" minOccurs="0" />
+              <xs:element name="principle" msprop:Generator_ColumnPropNameInRow="principle" msprop:Generator_ColumnPropNameInTable="principleColumn" msprop:Generator_ColumnVarNameInTable="columnprinciple" msprop:Generator_UserColumnName="principle" type="xs:string" minOccurs="0" />
+              <xs:element name="interest" msprop:Generator_ColumnPropNameInRow="interest" msprop:Generator_ColumnPropNameInTable="interestColumn" msprop:Generator_ColumnVarNameInTable="columninterest" msprop:Generator_UserColumnName="interest" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_UserColumnName="total" type="xs:string" minOccurs="0" />
+              <xs:element name="principle_due" msprop:Generator_ColumnPropNameInRow="principle_due" msprop:Generator_ColumnPropNameInTable="principle_dueColumn" msprop:Generator_ColumnVarNameInTable="columnprinciple_due" msprop:Generator_UserColumnName="principle_due" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
