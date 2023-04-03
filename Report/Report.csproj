@@ -651,6 +651,7 @@
     <Content Include="Operation\LoanExpectedRepayment.aspx" />
     <Content Include="Operation\LoanOverduebyCO.aspx" />
     <Content Include="Operation\LoanPaidOff.aspx" />
+    <Content Include="Operation\LoanScheduleRepayment.aspx" />
     <Content Include="Operation\LoanSummariesByCO.aspx" />
     <Content Include="Operation\PawnListDetail.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -1470,6 +1471,13 @@
     </Compile>
     <Compile Include="Operation\LoanPaidOff.aspx.designer.cs">
       <DependentUpon>LoanPaidOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\LoanScheduleRepayment.aspx.cs">
+      <DependentUpon>LoanScheduleRepayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\LoanScheduleRepayment.aspx.designer.cs">
+      <DependentUpon>LoanScheduleRepayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\LoanSummariesByCO.aspx.cs">
       <DependentUpon>LoanSummariesByCO.aspx</DependentUpon>
