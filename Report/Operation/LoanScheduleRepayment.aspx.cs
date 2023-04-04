@@ -21,8 +21,10 @@ namespace Report.Operation
         }
         private void GenerateReport(DataTable dt)
         {
-            ReportParameterCollection reportParameters = new ReportParameterCollection();
-            reportParameters.Add(new ReportParameter("@pACNO", txtContract.Text.Trim()));
+            ReportParameterCollection reportParameters = new ReportParameterCollection
+            {
+                new ReportParameter("txtContract", txtContract.Text)
+            };
 
             var ds = new ReportDataSource("LoanScheduleRepaymentDS", dt);
 
@@ -34,7 +36,9 @@ namespace Report.Operation
             
             var sql = "PS_SCHEDULE_LOAN";
 
+
             List<Procedure> procedureList = new List<Procedure>();
+            procedureList.Add(item: new Procedure() { field_name = "@pACNO", sql_db_type = MySqlDbType.VarChar, value_name = txtContract.Text });
 
             DataTable dt = db.getProcedureDataTable(sql, procedureList);
 

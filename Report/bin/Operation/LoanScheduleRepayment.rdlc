@@ -1998,9 +1998,7 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!name_kh.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                    </Style>
+                    <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -2030,9 +2028,7 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!staff_phone.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                    </Style>
+                    <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -2062,9 +2058,7 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=First(Fields!name_kh.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                    </Style>
+                    <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />

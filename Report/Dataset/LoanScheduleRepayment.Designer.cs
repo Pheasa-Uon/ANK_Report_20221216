@@ -323,6 +323,10 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnprinciple_due;
             
+            private global::System.Data.DataColumn columnname_kh;
+            
+            private global::System.Data.DataColumn columnstaff_phone;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public LoanScheduleRepaymentDataTable() {
@@ -534,6 +538,22 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn name_khColumn {
+                get {
+                    return this.columnname_kh;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn staff_phoneColumn {
+                get {
+                    return this.columnstaff_phone;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -591,7 +611,9 @@ namespace Report.Dataset {
                         string principle, 
                         string interest, 
                         string total, 
-                        string principle_due) {
+                        string principle_due, 
+                        string name_kh, 
+                        string staff_phone) {
                 LoanScheduleRepaymentRow rowLoanScheduleRepaymentRow = ((LoanScheduleRepaymentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         contract_no,
@@ -615,7 +637,9 @@ namespace Report.Dataset {
                         principle,
                         interest,
                         total,
-                        principle_due};
+                        principle_due,
+                        name_kh,
+                        staff_phone};
                 rowLoanScheduleRepaymentRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowLoanScheduleRepaymentRow);
                 return rowLoanScheduleRepaymentRow;
@@ -660,6 +684,8 @@ namespace Report.Dataset {
                 this.columninterest = base.Columns["interest"];
                 this.columntotal = base.Columns["total"];
                 this.columnprinciple_due = base.Columns["principle_due"];
+                this.columnname_kh = base.Columns["name_kh"];
+                this.columnstaff_phone = base.Columns["staff_phone"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -709,6 +735,10 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columntotal);
                 this.columnprinciple_due = new global::System.Data.DataColumn("principle_due", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprinciple_due);
+                this.columnname_kh = new global::System.Data.DataColumn("name_kh", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname_kh);
+                this.columnstaff_phone = new global::System.Data.DataColumn("staff_phone", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstaff_phone);
                 this.ExtendedProperties.Add("Generator_TablePropName", "_LoanScheduleRepayment");
                 this.ExtendedProperties.Add("Generator_UserTableName", "LoanScheduleRepayment");
             }
@@ -1210,6 +1240,38 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string name_kh {
+                get {
+                    try {
+                        return ((string)(this[this.tableLoanScheduleRepayment.name_khColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'name_kh\' in table \'LoanScheduleRepayment\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableLoanScheduleRepayment.name_khColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string staff_phone {
+                get {
+                    try {
+                        return ((string)(this[this.tableLoanScheduleRepayment.staff_phoneColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'staff_phone\' in table \'LoanScheduleRepayment\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableLoanScheduleRepayment.staff_phoneColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Iscontract_noNull() {
                 return this.IsNull(this.tableLoanScheduleRepayment.contract_noColumn);
             }
@@ -1470,6 +1532,30 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setprinciple_dueNull() {
                 this[this.tableLoanScheduleRepayment.principle_dueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isname_khNull() {
+                return this.IsNull(this.tableLoanScheduleRepayment.name_khColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setname_khNull() {
+                this[this.tableLoanScheduleRepayment.name_khColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isstaff_phoneNull() {
+                return this.IsNull(this.tableLoanScheduleRepayment.staff_phoneColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setstaff_phoneNull() {
+                this[this.tableLoanScheduleRepayment.staff_phoneColumn] = global::System.Convert.DBNull;
             }
         }
         
