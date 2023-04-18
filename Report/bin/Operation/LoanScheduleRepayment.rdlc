@@ -7,6 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>c0160258-d177-47a8-8171-85f38efff6e6</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -128,40 +129,6 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="CompanyName">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!CompanyName.Value</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>Gold</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>CompanyName</rd:DefaultName>
-            <Top>0.62167in</Top>
-            <Left>2.12167in</Left>
-            <Height>0.25in</Height>
-            <Width>2.99167in</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Tablix Name="Tablix1">
             <TablixBody>
               <TablixColumns>
@@ -202,6 +169,7 @@
                                 <TextRun>
                                   <Value>ល.រ</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -238,6 +206,7 @@
                                 <TextRun>
                                   <Value>ថ្ងៃខែឆ្នាំសងប្រាក់</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -274,6 +243,7 @@
                                 <TextRun>
                                   <Value>ចំនួនថ្ងៃ</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -310,6 +280,7 @@
                                 <TextRun>
                                   <Value>ប្រាក់ដើម</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -346,6 +317,7 @@
                                 <TextRun>
                                   <Value>ការប្រាក់</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -382,6 +354,7 @@
                                 <TextRun>
                                   <Value>ប្រាក់ត្រូវបង់សរុប</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -418,6 +391,7 @@
                                 <TextRun>
                                   <Value>សមតុល្យប្រាក់ដើម</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -459,6 +433,7 @@
                                 <TextRun>
                                   <Value>0</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -494,6 +469,7 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -529,6 +505,7 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -564,6 +541,7 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -599,6 +577,7 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -634,6 +613,7 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -669,6 +649,7 @@
                                 <TextRun>
                                   <Value>=Fields!pawn_price.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -709,6 +690,7 @@
                                 <TextRun>
                                   <Value>=Fields!order_no.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -744,6 +726,7 @@
                                 <TextRun>
                                   <Value>=Fields!due_day_name_kh.Value + "," + Fields!due_date.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -779,6 +762,7 @@
                                 <TextRun>
                                   <Value>=Fields!num_of_day.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -814,6 +798,7 @@
                                 <TextRun>
                                   <Value>=Fields!principle.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -849,6 +834,7 @@
                                 <TextRun>
                                   <Value>=Fields!interest.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -884,6 +870,7 @@
                                 <TextRun>
                                   <Value>=Fields!total.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -919,6 +906,7 @@
                                 <TextRun>
                                   <Value>=Fields!principle_due.Value - Fields!principle.Value</Value>
                                   <Style>
+                                    <FontFamily>Khmer OS Content</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -979,7 +967,6 @@
             <Left>0.62167in</Left>
             <Height>0.73334in</Height>
             <Width>5.95832in</Width>
-            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -995,6 +982,7 @@
                   <TextRun>
                     <Value>គណនីឥណទាន</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1007,7 +995,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>2</ZIndex>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1027,6 +1015,7 @@
                   <TextRun>
                     <Value>គណនីអតិថិជន</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1039,7 +1028,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1059,6 +1048,7 @@
                   <TextRun>
                     <Value>រយះពេលខ្ចី</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1071,7 +1061,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1091,6 +1081,7 @@
                   <TextRun>
                     <Value>កាលបរិច្ឆេតផ្តល់កម្ចី</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1103,7 +1094,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>5</ZIndex>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1123,6 +1114,7 @@
                   <TextRun>
                     <Value>អត្រាការប្រាក់</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1135,7 +1127,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>6</ZIndex>
+            <ZIndex>5</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1155,6 +1147,7 @@
                   <TextRun>
                     <Value>អាសយដ្ឋានអ្នកខ្ចី</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1167,7 +1160,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>7</ZIndex>
+            <ZIndex>6</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1187,6 +1180,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!contract_no.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1199,7 +1193,7 @@
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.55446in</Width>
-            <ZIndex>8</ZIndex>
+            <ZIndex>7</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1219,6 +1213,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!customer_no.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1231,7 +1226,7 @@
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.55446in</Width>
-            <ZIndex>9</ZIndex>
+            <ZIndex>8</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1251,6 +1246,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(CStr(Fields!num_of_install.Value), "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1263,7 +1259,7 @@
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.55446in</Width>
-            <ZIndex>10</ZIndex>
+            <ZIndex>9</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1283,6 +1279,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!disbursement_date.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1295,7 +1292,7 @@
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.55446in</Width>
-            <ZIndex>11</ZIndex>
+            <ZIndex>10</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1315,6 +1312,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(CStr(Fields!interest_rate.Value), "LoanScheduleRepaymentDS") + " %"</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1327,7 +1325,7 @@
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.55446in</Width>
-            <ZIndex>12</ZIndex>
+            <ZIndex>11</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1347,6 +1345,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!address.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1359,7 +1358,7 @@
             <Left>1.80728in</Left>
             <Height>0.53283in</Height>
             <Width>1.55446in</Width>
-            <ZIndex>13</ZIndex>
+            <ZIndex>12</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1379,6 +1378,7 @@
                   <TextRun>
                     <Value>កម្ចីវគ្គទី</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1391,7 +1391,7 @@
             <Left>4.02225in</Left>
             <Height>0.25in</Height>
             <Width>1.48155in</Width>
-            <ZIndex>14</ZIndex>
+            <ZIndex>13</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1411,6 +1411,7 @@
                   <TextRun>
                     <Value>អតិថិជនឈ្មោះ</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1423,7 +1424,7 @@
             <Left>4.02225in</Left>
             <Height>0.25in</Height>
             <Width>1.48155in</Width>
-            <ZIndex>15</ZIndex>
+            <ZIndex>14</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1443,6 +1444,7 @@
                   <TextRun>
                     <Value>អ្នករូមខ្ចីឈ្មោះ</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1455,7 +1457,7 @@
             <Left>4.02225in</Left>
             <Height>0.25in</Height>
             <Width>1.48155in</Width>
-            <ZIndex>16</ZIndex>
+            <ZIndex>15</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1475,6 +1477,7 @@
                   <TextRun>
                     <Value>កាលបរិច្ឆេតកញ្ចប់នៃកម្ចី</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1487,7 +1490,7 @@
             <Left>4.02225in</Left>
             <Height>0.25in</Height>
             <Width>1.48155in</Width>
-            <ZIndex>17</ZIndex>
+            <ZIndex>16</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1507,6 +1510,7 @@
                   <TextRun>
                     <Value>របៀបសងប្រាក់</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1519,7 +1523,7 @@
             <Left>4.02225in</Left>
             <Height>0.25in</Height>
             <Width>1.48155in</Width>
-            <ZIndex>18</ZIndex>
+            <ZIndex>17</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1539,6 +1543,7 @@
                   <TextRun>
                     <Value>ចំនួនទឹកប្រាក់</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1551,7 +1556,7 @@
             <Left>4.02225in</Left>
             <Height>0.25in</Height>
             <Width>1.48155in</Width>
-            <ZIndex>19</ZIndex>
+            <ZIndex>18</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1571,6 +1576,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(CStr(Fields!cycle_num.Value), "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1583,7 +1589,7 @@
             <Left>5.5038in</Left>
             <Height>0.25in</Height>
             <Width>1.07619in</Width>
-            <ZIndex>20</ZIndex>
+            <ZIndex>19</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1603,6 +1609,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!customer_name_kh.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1615,7 +1622,7 @@
             <Left>5.5038in</Left>
             <Height>0.25in</Height>
             <Width>1.07619in</Width>
-            <ZIndex>21</ZIndex>
+            <ZIndex>20</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1635,6 +1642,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!co_pawn_name.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1647,7 +1655,7 @@
             <Left>5.5038in</Left>
             <Height>0.25in</Height>
             <Width>1.07619in</Width>
-            <ZIndex>22</ZIndex>
+            <ZIndex>21</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1667,6 +1675,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!expired_date.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1679,7 +1688,7 @@
             <Left>5.5038in</Left>
             <Height>0.25in</Height>
             <Width>1.07619in</Width>
-            <ZIndex>23</ZIndex>
+            <ZIndex>22</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1699,6 +1708,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!repayment_mode_name.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1711,7 +1721,7 @@
             <Left>5.5038in</Left>
             <Height>0.25in</Height>
             <Width>1.07619in</Width>
-            <ZIndex>24</ZIndex>
+            <ZIndex>23</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1731,6 +1741,7 @@
                   <TextRun>
                     <Value>=​​​"៖ " + First(CStr(Fields!pawn_price.Value), "LoanScheduleRepaymentDS") + " " + First(Fields!currency_kh.Value, "LoanScheduleRepaymentDS")</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1743,7 +1754,7 @@
             <Left>5.5038in</Left>
             <Height>0.25in</Height>
             <Width>1.07619in</Width>
-            <ZIndex>25</ZIndex>
+            <ZIndex>24</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1763,6 +1774,7 @@
                   <TextRun>
                     <Value>"ថ្ងៃធ្វើការ ចាប់ពីថ្ងៃចន្ច ដល់ថ្ងៃសុក្រ ម៉ោង 8:00 ព្រឹក​​​ ដល់​ 4:00 ល្ងាច លើកលែងថ្ងៃឈប់សំរាក"</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1774,6 +1786,7 @@
                   <TextRun>
                     <Value>ការយឹតយ៉ាងបង់ប្រាក់តាមតារាសងប្រាក់ត្រូវរងពិន័យតាមអត្រា (2%) លើចំនួនទឹកប្រាក់ដែលត្រូវបង់។</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1785,6 +1798,7 @@
                   <TextRun>
                     <Value>ពត័មានលំអិតអំពីការបំរើសេវាកម្មរបស់យើងខ្ញុំសូមធ្វើការទំនាក់ទំនងតាមរយះ</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1796,6 +1810,7 @@
                   <TextRun>
                     <Value />
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1806,9 +1821,9 @@
             <rd:DefaultName>Textbox41</rd:DefaultName>
             <Top>4.08in</Top>
             <Left>0.62167in</Left>
-            <Height>0.55025in</Height>
+            <Height>0.68914in</Height>
             <Width>5.95832in</Width>
-            <ZIndex>26</ZIndex>
+            <ZIndex>25</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1828,6 +1843,7 @@
                   <TextRun>
                     <Value>ឈ្មោះមន្ត្រីឥណទាន</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1838,11 +1854,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox42</rd:DefaultName>
-            <Top>4.67192in</Top>
+            <Top>4.79692in</Top>
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>27</ZIndex>
+            <ZIndex>26</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1863,6 +1879,7 @@
                   <TextRun>
                     <Value>ទូរស័ព្ទលេខ</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1871,11 +1888,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox42</rd:DefaultName>
-            <Top>4.9497in</Top>
+            <Top>5.0747in</Top>
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.17172in</Width>
-            <ZIndex>28</ZIndex>
+            <ZIndex>27</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1896,6 +1913,7 @@
                   <TextRun>
                     <Value>ឈ្មោះមន្ត្រីឥណទាន</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1906,11 +1924,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox42</rd:DefaultName>
-            <Top>5.22748in</Top>
+            <Top>5.35248in</Top>
             <Left>0.81359in</Left>
             <Height>0.25in</Height>
             <Width>1.5798in</Width>
-            <ZIndex>29</ZIndex>
+            <ZIndex>28</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1931,6 +1949,7 @@
                   <TextRun>
                     <Value>ស្មាមមេដៃអតិថិជន</Value>
                     <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1941,11 +1960,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox42</rd:DefaultName>
-            <Top>5.22748in</Top>
+            <Top>5.35248in</Top>
             <Left>3.86333in</Left>
             <Height>0.25in</Height>
             <Width>2.71666in</Width>
-            <ZIndex>30</ZIndex>
+            <ZIndex>29</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1965,7 +1984,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=First(Fields!customer_name_kh.Value, "LoanScheduleRepaymentDS") + "        " + First(Fields!co_pawn_name.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1978,7 +1999,7 @@
             <Left>3.86333in</Left>
             <Height>0.25in</Height>
             <Width>2.71666in</Width>
-            <ZIndex>31</ZIndex>
+            <ZIndex>30</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1998,18 +2019,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!name_kh.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>4.67192in</Top>
+            <Top>4.79692in</Top>
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.79415in</Width>
-            <ZIndex>32</ZIndex>
+            <ZIndex>31</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2028,18 +2052,21 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=​​​"៖ " + First(Fields!staff_phone.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox47</rd:DefaultName>
-            <Top>4.9497in</Top>
+            <Top>5.0747in</Top>
             <Left>1.80728in</Left>
             <Height>0.25in</Height>
             <Width>1.79415in</Width>
-            <ZIndex>33</ZIndex>
+            <ZIndex>32</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2058,7 +2085,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=First(Fields!name_kh.Value, "LoanScheduleRepaymentDS")</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Khmer OS Content</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -2069,7 +2099,7 @@
             <Left>0.62167in</Left>
             <Height>0.25in</Height>
             <Width>1.77172in</Width>
-            <ZIndex>34</ZIndex>
+            <ZIndex>33</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2088,13 +2118,47 @@
             <Left>0.62167in</Left>
             <Height>0.5in</Height>
             <Width>0.5in</Width>
-            <ZIndex>35</ZIndex>
+            <ZIndex>34</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Image>
+          <Textbox Name="Textbox46">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>តារាងកាលវិភាគសងប្រាក់</Value>
+                    <Style>
+                      <FontFamily>Khmer OS Muol</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox46</rd:DefaultName>
+            <Top>0.655in</Top>
+            <Left>1.80728in</Left>
+            <Height>0.29167in</Height>
+            <Width>3.69652in</Width>
+            <ZIndex>35</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>6.6945in</Height>
         <Style />
