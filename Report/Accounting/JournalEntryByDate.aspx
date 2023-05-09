@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-sm-3 form-group">
                     <label>Branch:</label>
-                    <asp:DropDownList ID="ddBranchName" runat="server" AutoPostBack="true" CssClass="form-control  input-sm">
+                    <asp:DropDownList ID="ddBranchName" runat="server" AutoPostBack="true" CssClass="form-control input-sm" OnSelectedIndexChanged="ddBranchName_SelectedIndexChanged">
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddBranchName"
                         ErrorMessage="* Please select branch" ForeColor="Red" Font-Names="Tahoma" Display="Dynamic">
@@ -44,7 +44,18 @@
                     <asp:DropDownList ID="ddTransactionType" runat="server" AutoPostBack="true" CssClass="form-control input-sm">
                     </asp:DropDownList>
                 </div>
-
+                <div class="col-sm-2 form-group">
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                        <Triggers>
+                            <asp:AsyncPostBackTrigger ControlID="ddBranchName" />
+                        </Triggers>
+                        <ContentTemplate>
+                            <label>User:</label>
+                            <asp:DropDownList ID="ddUser" runat="server" CssClass="form-control input-sm" Enabled="true">
+                            </asp:DropDownList>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
                 <div class="form-group ml16">
                     <div>
                         <label>&nbsp;</label>

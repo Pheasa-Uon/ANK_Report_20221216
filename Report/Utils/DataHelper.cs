@@ -338,6 +338,30 @@ namespace Report.Utils
             ddl.SelectedValue = "0";
         }
 
+        public static void GetUserNamesAll(DropDownList ddl)
+        {
+            DBConnect db = new DBConnect();
+            var operationList = db.GetUserNamesAll();
+            ddl.DataTextField = "name";
+            ddl.DataValueField = "id";
+            ddl.DataSource = operationList;
+            ddl.DataBind();
+            ddl.Items.Insert(0, new ListItem("--- ALL ---", "ALL"));
+            ddl.SelectedValue = "ALL";
+        }
+
+        public static void GetUserNames(DropDownList ddl, int branchId)
+        {
+            DBConnect db = new DBConnect();
+            var operationList = db.GetUserNames(branchId);
+            ddl.DataTextField = "name";
+            ddl.DataValueField = "id";
+            ddl.DataSource = operationList;
+            ddl.DataBind();
+            ddl.Items.Insert(0, new ListItem("--- ALL ---", "ALL"));
+            ddl.SelectedValue = "ALL";
+        }
+
         //Check And Get System Date Statement
         public static String getSystemDateStr(string format = "dd-MMM-yyyy")
         {

@@ -22,10 +22,38 @@ namespace Report.Accounting
                 DataHelper.checkLoginSession();
                 DataHelper.populateBranchDDL(ddBranchName, DataHelper.getUserId());
                 DataHelper.populateTransactionTypeDDL(ddTransactionType);
+                this.populateUser();
                 var date = DataHelper.getSystemDateTextbox();
                 dtpFromDate.Text = date;
                 dtpToDate.Text = date;
             }
+        }
+        private void populateUser()
+        {
+            if (ddBranchName.SelectedItem.Value != "")
+            {
+                if (ddBranchName.SelectedItem.Value == "ALL")
+                {
+                    ddUser.Enabled = true;
+                    DataHelper.GetUserNamesAll(ddUser);
+                }
+                else
+                {
+                    ddUser.Enabled = true;
+                    DataHelper.GetUserNames(ddUser, Convert.ToInt32(ddBranchName.SelectedItem.Value));
+                }
+
+            }
+            else
+            {
+                ddUser.Enabled = false;
+                ddUser.Items.Clear();
+            }
+        }
+
+        protected void ddBranchName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            populateUser();
         }
 
         private void GenerateReport(DataTable trialBalanceDT)
@@ -35,6 +63,7 @@ namespace Report.Accounting
             reportParameters.Add(new ReportParameter("FromDate", DateTime.ParseExact(dtpFromDate.Text, format, null).ToString("dd-MMM-yyyy")));
             reportParameters.Add(new ReportParameter("ToDate", DateTime.ParseExact(dtpToDate.Text, format, null).ToString("dd-MMM-yyyy")));
             reportParameters.Add(new ReportParameter("TransactionType", ddTransactionType.SelectedItem.Text));
+            reportParameters.Add(new ReportParameter("User", ddUser.SelectedItem.Text));
 
             var _journalEntry = new ReportDataSource("JournalEntryByDateDS", trialBalanceDT);
             DataHelper.generateAccountingReport(ReportViewer1, "JournalEntryByDate", reportParameters, _journalEntry);
@@ -68,6 +97,7 @@ namespace Report.Accounting
             procedureList.Add(item: new Procedure() { field_name = "@FromDate", sql_db_type = MySqlDbType.Date, value_name = fromDate });
             procedureList.Add(item: new Procedure() { field_name = "@ToDate", sql_db_type = MySqlDbType.Date, value_name = toDate });
             procedureList.Add(item: new Procedure() { field_name = "@TransactionType", sql_db_type = MySqlDbType.VarChar, value_name = ddTransactionType.SelectedItem.Value });
+            procedureList.Add(item: new Procedure() { field_name = "@pUSER", sql_db_type = MySqlDbType.VarChar, value_name = ddUser.SelectedItem.Value });
 
             DataTable journalEntryDT = db.getProcedureDataTable(sql, procedureList);
             GenerateReport(journalEntryDT);
