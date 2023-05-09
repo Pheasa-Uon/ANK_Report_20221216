@@ -269,6 +269,40 @@ namespace Report.Utils
 
             return list;
         }
+        //Get User Statement
+        public List<Officer> GetUserNames(int branch_id)
+        {
+            string query = "select u.id, u.username from `user` u inner join staff_info st on u.staff_id = st.id where u.b_status = '1' and st.branch_id = " + branch_id;
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            var list = dt.AsEnumerable().Select(r => new Officer()
+            {
+                id = Convert.ToInt32(r["id"]),
+                name = (string)r["username"]
+            }).ToList();
+
+            return list;
+        }
+
+        //Get User Statement
+        public List<Officer> GetUserNamesAll()
+        {
+            string query = "select u.id, u.username from `user` u inner join staff_info st on u.staff_id = st.id where u.b_status = '1' ;";
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            var list = dt.AsEnumerable().Select(r => new Officer()
+            {
+                id = Convert.ToInt32(r["id"]),
+                name = (string)r["username"]
+            }).ToList();
+
+            return list;
+        }
+
 
         //Get GL Statement
         public List<GL> GetGL(int branch_id)
