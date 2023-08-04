@@ -420,6 +420,17 @@
     <Content Include="Dataset\ContractOutstandingByDate.xsc">
       <DependentUpon>ContractOutstandingByDate.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\ContractLateRenewal.xsc">
+      <DependentUpon>ContractLateRenewal.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ContractLateRenewal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractLateRenewal.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ContractLateRenewal.xss">
+      <DependentUpon>ContractLateRenewal.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\ContractOutstandingByDate.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -427,6 +438,28 @@
     </None>
     <Content Include="Dataset\ContractOutstandingByDate.xss">
       <DependentUpon>ContractOutstandingByDate.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\ContractWillRenewalIn15Days.xsc">
+      <DependentUpon>ContractWillRenewalIn15Days.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ContractWillRenewalIn15Days.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractWillRenewalIn15Days.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ContractWillRenewalIn15Days.xss">
+      <DependentUpon>ContractWillRenewalIn15Days.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\ContractWillRenewalInMonth.xsc">
+      <DependentUpon>ContractWillRenewalInMonth.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ContractWillRenewalInMonth.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractWillRenewalInMonth.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ContractWillRenewalInMonth.xss">
+      <DependentUpon>ContractWillRenewalInMonth.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\COProductivity.xsd">
       <SubType>Designer</SubType>
@@ -655,6 +688,9 @@
     </Content>
     <Content Include="Operation\CashCollectionConsolidate.aspx" />
     <Content Include="Operation\CashCollectionOnDate.aspx" />
+    <Content Include="Operation\ContractLateRenewal.aspx" />
+    <Content Include="Operation\ContractWillRenewalIn15Days.aspx" />
+    <Content Include="Operation\ContractWillRenewalInMonth.aspx" />
     <Content Include="Operation\Customer.aspx" />
     <Content Include="Operation\ContractOutstandingByDate.aspx" />
     <Content Include="Operation\DisbursementConsolidationAsOf.aspx" />
@@ -1194,10 +1230,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CollectionSheet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\ContractLateRenewal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractLateRenewal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\ContractOutstandingByDate.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ContractOutstandingByDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ContractWillRenewalIn15Days.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractWillRenewalIn15Days.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ContractWillRenewalInMonth.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractWillRenewalInMonth.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\COProductivity.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1431,6 +1482,27 @@
     </Compile>
     <Compile Include="Operation\CashCollectionOnDate.aspx.designer.cs">
       <DependentUpon>CashCollectionOnDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ContractLateRenewal.aspx.cs">
+      <DependentUpon>ContractLateRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\ContractLateRenewal.aspx.designer.cs">
+      <DependentUpon>ContractLateRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalIn15Days.aspx.cs">
+      <DependentUpon>ContractWillRenewalIn15Days.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalIn15Days.aspx.designer.cs">
+      <DependentUpon>ContractWillRenewalIn15Days.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalInMonth.aspx.cs">
+      <DependentUpon>ContractWillRenewalInMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalInMonth.aspx.designer.cs">
+      <DependentUpon>ContractWillRenewalInMonth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\Customer.aspx.cs">
       <DependentUpon>Customer.aspx</DependentUpon>
@@ -1746,6 +1818,11 @@
     <Content Include="Operation\LoanScheduleRepayment.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Operation\ContractLateRenewal.rdlc" />
+    <EmbeddedResource Include="Operation\ContractWillRenewalIn15Days.rdlc" />
+    <EmbeddedResource Include="Operation\ContractWillRenewalInMonth.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
