@@ -1820,7 +1820,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Operation\ContractLateRenewal.rdlc" />
+    <Content Include="Operation\ContractLateRenewal.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Operation\ContractWillRenewalIn15Days.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
