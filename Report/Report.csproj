@@ -1821,8 +1821,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Operation\ContractLateRenewal.rdlc" />
-    <EmbeddedResource Include="Operation\ContractWillRenewalIn15Days.rdlc" />
-    <EmbeddedResource Include="Operation\ContractWillRenewalInMonth.rdlc" />
+    <Content Include="Operation\ContractWillRenewalIn15Days.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\ContractWillRenewalInMonth.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
