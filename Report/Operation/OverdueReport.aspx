@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Overdue Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OverdueReport.aspx.cs" Inherits="Report.Operation.OverdueRport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OverdueReport.aspx.cs" Inherits="Report.Operation.OverdueReport" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
@@ -46,4 +46,5 @@
             </center>
         </div>
     </div>
+</asp:Content>
 

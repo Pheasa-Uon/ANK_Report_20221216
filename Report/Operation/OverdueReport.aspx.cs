@@ -8,7 +8,7 @@ using System.Data;
 
 namespace Report.Operation
 {
-    public partial class OverdueRport : System.Web.UI.Page
+    public partial class OverdueReport : System.Web.UI.Page
     {
         private DBConnect db = new DBConnect();
         private static string asOfDate;
@@ -23,7 +23,6 @@ namespace Report.Operation
                 DataHelper.populateBranchDDL(ddBranchName, DataHelper.getUserId());
             }
         }
-
         protected void btnView_Click(object sender, EventArgs e)
         {
             try

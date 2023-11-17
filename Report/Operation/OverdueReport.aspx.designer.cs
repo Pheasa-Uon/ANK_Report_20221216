@@ -11,7 +11,7 @@ namespace Report.Operation
 {
 
 
-    public partial class OverdueRport
+    public partial class OverdueReport
     {
 
         /// <summary>
