@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OverdueReport" targetNamespace="http://tempuri.org/OverdueReport.xsd" xmlns:mstns="http://tempuri.org/OverdueReport.xsd" xmlns="http://tempuri.org/OverdueReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OverdueReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OverdueReport" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OverdueReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OverdueReport" msprop:Generator_RowClassName="OverdueReportRow" msprop:Generator_RowEvHandlerName="OverdueReportRowChangeEventHandler" msprop:Generator_RowDeletedName="OverdueReportRowDeleted" msprop:Generator_RowDeletingName="OverdueReportRowDeleting" msprop:Generator_RowEvArgName="OverdueReportRowChangeEvent" msprop:Generator_TablePropName="_OverdueReport" msprop:Generator_RowChangedName="OverdueReportRowChanged" msprop:Generator_UserTableName="OverdueReport" msprop:Generator_RowChangingName="OverdueReportRowChanging" msprop:Generator_TableClassName="OverdueReportDataTable" msprop:Generator_TableVarName="tableOverdueReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contract_no" msprop:Generator_UserColumnName="contract_no" msprop:Generator_ColumnPropNameInTable="contract_noColumn" msprop:Generator_ColumnPropNameInRow="contract_no" msprop:Generator_ColumnVarNameInTable="columncontract_no" type="xs:string" minOccurs="0" />
+              <xs:element name="customer_name_kh" msprop:Generator_UserColumnName="customer_name_kh" msprop:Generator_ColumnPropNameInTable="customer_name_khColumn" msprop:Generator_ColumnPropNameInRow="customer_name_kh" msprop:Generator_ColumnVarNameInTable="columncustomer_name_kh" type="xs:string" minOccurs="0" />
+              <xs:element name="disbursement_date" msprop:Generator_UserColumnName="disbursement_date" msprop:Generator_ColumnPropNameInTable="disbursement_dateColumn" msprop:Generator_ColumnPropNameInRow="disbursement_date" msprop:Generator_ColumnVarNameInTable="columndisbursement_date" type="xs:string" minOccurs="0" />
+              <xs:element name="principal_balance" msprop:Generator_UserColumnName="principal_balance" msprop:Generator_ColumnPropNameInTable="principal_balanceColumn" msprop:Generator_ColumnPropNameInRow="principal_balance" msprop:Generator_ColumnVarNameInTable="columnprincipal_balance" type="xs:string" minOccurs="0" />
+              <xs:element name="last_repay_date" msprop:Generator_UserColumnName="last_repay_date" msprop:Generator_ColumnPropNameInTable="last_repay_dateColumn" msprop:Generator_ColumnPropNameInRow="last_repay_date" msprop:Generator_ColumnVarNameInTable="columnlast_repay_date" type="xs:string" minOccurs="0" />
+              <xs:element name="prin_repay" msprop:Generator_UserColumnName="prin_repay" msprop:Generator_ColumnPropNameInTable="prin_repayColumn" msprop:Generator_ColumnPropNameInRow="prin_repay" msprop:Generator_ColumnVarNameInTable="columnprin_repay" type="xs:string" minOccurs="0" />
+              <xs:element name="int_pay" msprop:Generator_UserColumnName="int_pay" msprop:Generator_ColumnPropNameInTable="int_payColumn" msprop:Generator_ColumnPropNameInRow="int_pay" msprop:Generator_ColumnVarNameInTable="columnint_pay" type="xs:string" minOccurs="0" />
+              <xs:element name="penalty_repay" msprop:Generator_UserColumnName="penalty_repay" msprop:Generator_ColumnPropNameInTable="penalty_repayColumn" msprop:Generator_ColumnPropNameInRow="penalty_repay" msprop:Generator_ColumnVarNameInTable="columnpenalty_repay" type="xs:string" minOccurs="0" />
+              <xs:element name="total_repay" msprop:Generator_UserColumnName="total_repay" msprop:Generator_ColumnPropNameInTable="total_repayColumn" msprop:Generator_ColumnPropNameInRow="total_repay" msprop:Generator_ColumnVarNameInTable="columntotal_repay" type="xs:string" minOccurs="0" />
+              <xs:element name="num_of_day_late" msprop:Generator_UserColumnName="num_of_day_late" msprop:Generator_ColumnPropNameInTable="num_of_day_lateColumn" msprop:Generator_ColumnPropNameInRow="num_of_day_late" msprop:Generator_ColumnVarNameInTable="columnnum_of_day_late" type="xs:string" minOccurs="0" />
+              <xs:element name="name_kh" msprop:Generator_UserColumnName="name_kh" msprop:Generator_ColumnPropNameInTable="name_khColumn" msprop:Generator_ColumnPropNameInRow="name_kh" msprop:Generator_ColumnVarNameInTable="columnname_kh" type="xs:string" minOccurs="0" />
+              <xs:element name="installment_date" msprop:Generator_ColumnPropNameInRow="installment_date" msprop:Generator_ColumnPropNameInTable="installment_dateColumn" msprop:Generator_ColumnVarNameInTable="columninstallment_date" msprop:Generator_UserColumnName="installment_date" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -678,6 +678,17 @@
     <Content Include="Dataset\NewGrant.xss">
       <DependentUpon>NewGrant.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\OverdueReport.xsc">
+      <DependentUpon>OverdueReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\OverdueReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OverdueReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\OverdueReport.xss">
+      <DependentUpon>OverdueReport.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\PawnListDetail.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -700,6 +711,7 @@
     <Content Include="Operation\LoanPaidOff.aspx" />
     <Content Include="Operation\LoanScheduleRepayment.aspx" />
     <Content Include="Operation\LoanSummariesByCO.aspx" />
+    <Content Include="Operation\OverdueReport.aspx" />
     <Content Include="Operation\PawnListDetail.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1353,6 +1365,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NewGrant.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\OverdueReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OverdueReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\PawnListDetail.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1573,6 +1590,13 @@
     </Compile>
     <Compile Include="Operation\LoanSummariesByCO.aspx.designer.cs">
       <DependentUpon>LoanSummariesByCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\OverdueReport.aspx.cs">
+      <DependentUpon>OverdueReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\OverdueReport.aspx.designer.cs">
+      <DependentUpon>OverdueReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\PaymentDetail.aspx.cs">
       <DependentUpon>PaymentDetail.aspx</DependentUpon>
@@ -1829,6 +1853,9 @@
     <Content Include="Operation\ContractWillRenewalInMonth.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Operation\OverdueReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
