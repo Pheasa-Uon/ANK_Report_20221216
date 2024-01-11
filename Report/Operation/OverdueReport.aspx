@@ -27,6 +27,18 @@
                         ValidationExpression="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$"></asp:RegularExpressionValidator>
                     <span style="color: red"><%=dateFromError %></span>
                 </div>
+                <div class="col-sm-2 form-group">
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                        <Triggers>
+                            <asp:AsyncPostBackTrigger ControlID="ddBranchName" />
+                        </Triggers>
+                        <ContentTemplate>
+                            <label>Pawn Officer:</label>
+                            <asp:DropDownList ID="ddOfficer" runat="server" CssClass="form-control input-sm" Enabled="false">
+                            </asp:DropDownList>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
                 <div class="form-group ml16">
                     <div>
                         <label>&nbsp;</label>
