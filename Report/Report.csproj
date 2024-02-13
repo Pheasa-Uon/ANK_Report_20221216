@@ -178,6 +178,7 @@
     <Content Include="Accounting\IncomeStatementByMonth.aspx" />
     <Content Include="Accounting\IncomeStatementYTD.aspx" />
     <Content Include="Accounting\JournalEntryByDate.aspx" />
+    <Content Include="Accounting\StatementOfAccount.aspx" />
     <Content Include="Accounting\TrialBalance.aspx" />
     <Content Include="Accounting\TrialBalanceTotalByClass.aspx" />
     <Content Include="Accounting\UnearnedRevenue.aspx" />
@@ -776,6 +777,17 @@
     <Content Include="Dataset\Renew.xss">
       <DependentUpon>Renew.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\StatementOfAccount.xsc">
+      <DependentUpon>StatementOfAccount.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\StatementOfAccount.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatementOfAccount.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\StatementOfAccount.xss">
+      <DependentUpon>StatementOfAccount.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\StockReport.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1148,6 +1160,13 @@
     <Compile Include="Accounting\JournalEntryByDate.aspx.designer.cs">
       <DependentUpon>JournalEntryByDate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\StatementOfAccount.aspx.cs">
+      <DependentUpon>StatementOfAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\StatementOfAccount.aspx.designer.cs">
+      <DependentUpon>StatementOfAccount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\TrialBalance.aspx.cs">
       <DependentUpon>TrialBalance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1399,6 +1418,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Renew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\StatementOfAccount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatementOfAccount.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\StockReport.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1856,6 +1880,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Operation\OverdueReport.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounting\StatementOfAccount.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
