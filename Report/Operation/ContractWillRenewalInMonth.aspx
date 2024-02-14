@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contract Will Renewal In Month" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContractWillRenewalInMonth.aspx.cs" Inherits="Report.Operation.ContractWillRenewalInMonth" %>
+﻿<%@ Page Title="Contract Will Continue Mandate In Month Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContractWillRenewalInMonth.aspx.cs" Inherits="Report.Operation.ContractWillRenewalInMonth" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
