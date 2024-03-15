@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Redeem Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RedeemReport.aspx.cs" Inherits="Report.Operation.Redeem" %>
+﻿<%@ Page Title="Paid Off Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RedeemReport.aspx.cs" Inherits="Report.Operation.Redeem" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 

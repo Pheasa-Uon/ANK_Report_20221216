@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Renew Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RenewReport.aspx.cs" Inherits="Report.Operation.Renew" %>
+﻿<%@ Page Title="Continue Mandate Report" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RenewReport.aspx.cs" Inherits="Report.Operation.Renew" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 

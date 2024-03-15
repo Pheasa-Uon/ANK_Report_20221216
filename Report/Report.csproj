@@ -178,6 +178,7 @@
     <Content Include="Accounting\IncomeStatementByMonth.aspx" />
     <Content Include="Accounting\IncomeStatementYTD.aspx" />
     <Content Include="Accounting\JournalEntryByDate.aspx" />
+    <Content Include="Accounting\StatementOfAccount.aspx" />
     <Content Include="Accounting\TrialBalance.aspx" />
     <Content Include="Accounting\TrialBalanceTotalByClass.aspx" />
     <Content Include="Accounting\UnearnedRevenue.aspx" />
@@ -420,6 +421,17 @@
     <Content Include="Dataset\ContractOutstandingByDate.xsc">
       <DependentUpon>ContractOutstandingByDate.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\ContractLateRenewal.xsc">
+      <DependentUpon>ContractLateRenewal.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ContractLateRenewal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractLateRenewal.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ContractLateRenewal.xss">
+      <DependentUpon>ContractLateRenewal.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\ContractOutstandingByDate.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -427,6 +439,28 @@
     </None>
     <Content Include="Dataset\ContractOutstandingByDate.xss">
       <DependentUpon>ContractOutstandingByDate.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\ContractWillRenewalIn15Days.xsc">
+      <DependentUpon>ContractWillRenewalIn15Days.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ContractWillRenewalIn15Days.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractWillRenewalIn15Days.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ContractWillRenewalIn15Days.xss">
+      <DependentUpon>ContractWillRenewalIn15Days.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\ContractWillRenewalInMonth.xsc">
+      <DependentUpon>ContractWillRenewalInMonth.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ContractWillRenewalInMonth.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractWillRenewalInMonth.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ContractWillRenewalInMonth.xss">
+      <DependentUpon>ContractWillRenewalInMonth.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\COProductivity.xsd">
       <SubType>Designer</SubType>
@@ -618,6 +652,17 @@
     <Content Include="Dataset\LoanSummariesByCO.xsc">
       <DependentUpon>LoanSummariesByCO.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\LoanScheduleRepayment.xsc">
+      <DependentUpon>LoanScheduleRepayment.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\LoanScheduleRepayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanScheduleRepayment.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\LoanScheduleRepayment.xss">
+      <DependentUpon>LoanScheduleRepayment.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\LoanSummariesByCO.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -634,6 +679,17 @@
     <Content Include="Dataset\NewGrant.xss">
       <DependentUpon>NewGrant.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\OverdueReport.xsc">
+      <DependentUpon>OverdueReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\OverdueReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OverdueReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\OverdueReport.xss">
+      <DependentUpon>OverdueReport.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\PawnListDetail.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -644,6 +700,9 @@
     </Content>
     <Content Include="Operation\CashCollectionConsolidate.aspx" />
     <Content Include="Operation\CashCollectionOnDate.aspx" />
+    <Content Include="Operation\ContractLateRenewal.aspx" />
+    <Content Include="Operation\ContractWillRenewalIn15Days.aspx" />
+    <Content Include="Operation\ContractWillRenewalInMonth.aspx" />
     <Content Include="Operation\Customer.aspx" />
     <Content Include="Operation\ContractOutstandingByDate.aspx" />
     <Content Include="Operation\DisbursementConsolidationAsOf.aspx" />
@@ -651,7 +710,9 @@
     <Content Include="Operation\LoanExpectedRepayment.aspx" />
     <Content Include="Operation\LoanOverduebyCO.aspx" />
     <Content Include="Operation\LoanPaidOff.aspx" />
+    <Content Include="Operation\LoanScheduleRepayment.aspx" />
     <Content Include="Operation\LoanSummariesByCO.aspx" />
+    <Content Include="Operation\OverdueReport.aspx" />
     <Content Include="Operation\PawnListDetail.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -715,6 +776,17 @@
     </None>
     <Content Include="Dataset\Renew.xss">
       <DependentUpon>Renew.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\StatementOfAccount.xsc">
+      <DependentUpon>StatementOfAccount.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\StatementOfAccount.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatementOfAccount.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\StatementOfAccount.xss">
+      <DependentUpon>StatementOfAccount.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\StockReport.xsd">
       <SubType>Designer</SubType>
@@ -1088,6 +1160,13 @@
     <Compile Include="Accounting\JournalEntryByDate.aspx.designer.cs">
       <DependentUpon>JournalEntryByDate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\StatementOfAccount.aspx.cs">
+      <DependentUpon>StatementOfAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\StatementOfAccount.aspx.designer.cs">
+      <DependentUpon>StatementOfAccount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\TrialBalance.aspx.cs">
       <DependentUpon>TrialBalance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1182,10 +1261,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CollectionSheet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\ContractLateRenewal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractLateRenewal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\ContractOutstandingByDate.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ContractOutstandingByDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ContractWillRenewalIn15Days.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractWillRenewalIn15Days.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ContractWillRenewalInMonth.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractWillRenewalInMonth.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\COProductivity.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1272,6 +1366,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoanPaidOff.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\LoanScheduleRepayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanScheduleRepayment.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\LoanSummariesByCO.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1284,6 +1383,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NewGrant.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\OverdueReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OverdueReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\PawnListDetail.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1314,6 +1418,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Renew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\StatementOfAccount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatementOfAccount.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\StockReport.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1415,6 +1524,27 @@
     <Compile Include="Operation\CashCollectionOnDate.aspx.designer.cs">
       <DependentUpon>CashCollectionOnDate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Operation\ContractLateRenewal.aspx.cs">
+      <DependentUpon>ContractLateRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\ContractLateRenewal.aspx.designer.cs">
+      <DependentUpon>ContractLateRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalIn15Days.aspx.cs">
+      <DependentUpon>ContractWillRenewalIn15Days.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalIn15Days.aspx.designer.cs">
+      <DependentUpon>ContractWillRenewalIn15Days.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalInMonth.aspx.cs">
+      <DependentUpon>ContractWillRenewalInMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\ContractWillRenewalInMonth.aspx.designer.cs">
+      <DependentUpon>ContractWillRenewalInMonth.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Operation\Customer.aspx.cs">
       <DependentUpon>Customer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1471,12 +1601,26 @@
     <Compile Include="Operation\LoanPaidOff.aspx.designer.cs">
       <DependentUpon>LoanPaidOff.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Operation\LoanScheduleRepayment.aspx.cs">
+      <DependentUpon>LoanScheduleRepayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\LoanScheduleRepayment.aspx.designer.cs">
+      <DependentUpon>LoanScheduleRepayment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Operation\LoanSummariesByCO.aspx.cs">
       <DependentUpon>LoanSummariesByCO.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Operation\LoanSummariesByCO.aspx.designer.cs">
       <DependentUpon>LoanSummariesByCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\OverdueReport.aspx.cs">
+      <DependentUpon>OverdueReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\OverdueReport.aspx.designer.cs">
+      <DependentUpon>OverdueReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\PaymentDetail.aspx.cs">
       <DependentUpon>PaymentDetail.aspx</DependentUpon>
@@ -1715,6 +1859,32 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Operation\LoanSummariesByCO.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Operation\LoanScheduleRepayment.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Operation\ContractLateRenewal.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\ContractWillRenewalIn15Days.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Operation\ContractWillRenewalInMonth.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Operation\OverdueReport.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounting\StatementOfAccount.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
