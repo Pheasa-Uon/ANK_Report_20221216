@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Pawn List Detail" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PawnListDetail.aspx.cs" Inherits="Report.Operation.PawnlistDetail" %>
+﻿<%@ Page Title="Active Pawn List Detail" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PawnListDetail.aspx.cs" Inherits="Report.Operation.PawnlistDetail" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 

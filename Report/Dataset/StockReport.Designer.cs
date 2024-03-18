@@ -371,6 +371,8 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columndisbursement_date;
             
+            private global::System.Data.DataColumn columnexpired_date;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public StockDSDataTable() {
@@ -774,6 +776,14 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn expired_dateColumn {
+                get {
+                    return this.columnexpired_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -855,7 +865,8 @@ namespace Report.Dataset {
                         string vh_first_issue_date, 
                         string is_ownership, 
                         string certificate_check, 
-                        string disbursement_date) {
+                        string disbursement_date, 
+                        string expired_date) {
                 StockDSRow rowStockDSRow = ((StockDSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
@@ -903,7 +914,8 @@ namespace Report.Dataset {
                         vh_first_issue_date,
                         is_ownership,
                         certificate_check,
-                        disbursement_date};
+                        disbursement_date,
+                        expired_date};
                 rowStockDSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStockDSRow);
                 return rowStockDSRow;
@@ -972,6 +984,7 @@ namespace Report.Dataset {
                 this.columnis_ownership = base.Columns["is_ownership"];
                 this.columncertificate_check = base.Columns["certificate_check"];
                 this.columndisbursement_date = base.Columns["disbursement_date"];
+                this.columnexpired_date = base.Columns["expired_date"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1069,6 +1082,8 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columncertificate_check);
                 this.columndisbursement_date = new global::System.Data.DataColumn("disbursement_date", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndisbursement_date);
+                this.columnexpired_date = new global::System.Data.DataColumn("expired_date", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnexpired_date);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1947,6 +1962,22 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string expired_date {
+                get {
+                    try {
+                        return ((string)(this[this.tableStockDS.expired_dateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'expired_date\' in table \'StockDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStockDS.expired_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsidNull() {
                 return this.IsNull(this.tableStockDS.idColumn);
             }
@@ -2495,6 +2526,18 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setdisbursement_dateNull() {
                 this[this.tableStockDS.disbursement_dateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isexpired_dateNull() {
+                return this.IsNull(this.tableStockDS.expired_dateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setexpired_dateNull() {
+                this[this.tableStockDS.expired_dateColumn] = global::System.Convert.DBNull;
             }
         }
         

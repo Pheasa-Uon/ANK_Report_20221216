@@ -52,6 +52,8 @@ namespace Report.Operation
                 return;
             }
 
+            var ContractLoanOS = "ContractLoanOS";
+
             List<Procedure> parameters = new List<Procedure>();
             parameters.Add(item: new Procedure() { field_name = "@branch", sql_db_type = MySqlDbType.VarChar, value_name = ddBranchName.SelectedItem.Value });
             parameters.Add(item: new Procedure() { field_name = "@frDate", sql_db_type = MySqlDbType.VarChar, value_name = fromDate });

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Collection Sheet" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CollectionSheet.aspx.cs" Inherits="Report.Operation.CollectionSheet" %>
+﻿<%@ Page Title="Loan expected repayment" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CollectionSheet.aspx.cs" Inherits="Report.Operation.CollectionSheet" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 

@@ -262,7 +262,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Loan Summaries By CO</Value>
+                    <Value>Loan Summaries By PO</Value>
                     <Style>
                       <FontFamily>Calibri</FontFamily>
                       <FontSize>16pt</FontSize>
@@ -444,7 +444,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CO Name</Value>
+                                  <Value>PO Name</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>

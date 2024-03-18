@@ -372,7 +372,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CO Name</Value>
+                                  <Value>POName</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>

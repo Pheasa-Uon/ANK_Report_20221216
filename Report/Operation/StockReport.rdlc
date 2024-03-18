@@ -201,10 +201,14 @@
           <DataField>disbursement_date</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="expired_date">
+          <DataField>expired_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>StockReport</rd:DataSetName>
-        <rd:SchemaPath>D:\002-MIDAS Financial System\010-Reports\KK-Report1\Report\Dataset\StockReport.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Laptop-PC\Documents\ANK_Project_Report\Report\Dataset\StockReport.xsd</rd:SchemaPath>
         <rd:TableName>StockDS</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -307,6 +311,9 @@
                   <Width>0.86107in</Width>
                 </TablixColumn>
                 <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
                   <Width>0.87622in</Width>
                 </TablixColumn>
                 <TablixColumn>
@@ -400,7 +407,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Ticket ID/Loan Account</Value>
+                                  <Value>Loan Account</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -590,7 +597,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Loan Disbur</Value>
+                                  <Value>Status</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -604,6 +611,44 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Wheat</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Outstanding</Value>
+                                  <Style>
+                                    <FontFamily>Gill Sans MT</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1194,14 +1239,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox10">
+                        <Textbox Name="contract_no">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(isNothing(Fields!serial_number.Value), Fields!pre_ticket_no.Value, Fields!ticket_no.Value)</Value>
+                                  <Value>=Fields!contract_no.Value</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -1213,7 +1258,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <rd:DefaultName>contract_no</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1337,14 +1382,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="due_date">
+                        <Textbox Name="expired_date">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!due_date.Value</Value>
+                                  <Value>=Fields!expired_date.Value</Value>
                                   <Style>
                                     <FontFamily>Gill Sans MT</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -1357,7 +1402,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>due_date</rd:DefaultName>
+                          <rd:DefaultName>expired_date</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1370,6 +1415,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1395,6 +1441,43 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>status</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="outstanding">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!outstanding.Value</Value>
+                                  <Style>
+                                    <FontFamily>Gill Sans MT</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <Color>=IIF(Fields!status.Value = "Late", "Red", "Black")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>outstanding</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1999,6 +2082,44 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox41</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Gainsboro</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox20">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Gill Sans MT</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>=IIF(Fields!status.Value = "Late", "Red", "Black")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox20</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2639,6 +2760,48 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox23">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Gill Sans MT</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>=IIF(Fields!status.Value = "Late", "Red", "Black")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox23</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <BackgroundColor>Yellow</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox31">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -3252,6 +3415,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -3286,7 +3450,7 @@
             <Top>1.58208in</Top>
             <Left>0.1395in</Left>
             <Height>1in</Height>
-            <Width>20.02371in</Width>
+            <Width>21.02371in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -3688,7 +3852,7 @@
         <Height>4.36375in</Height>
         <Style />
       </Body>
-      <Width>20.36113in</Width>
+      <Width>21.16321in</Width>
       <Page>
         <PageHeight>8.27in</PageHeight>
         <PageWidth>11.69in</PageWidth>

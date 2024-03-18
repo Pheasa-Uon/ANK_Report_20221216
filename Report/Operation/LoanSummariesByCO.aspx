@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Loan Summaries By CO" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LoanSummariesByCO.aspx.cs" Inherits="Report.Operation.LoanSummariesByCO" %>
+﻿<%@ Page Title="Loan Summaries By PO" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LoanSummariesByCO.aspx.cs" Inherits="Report.Operation.LoanSummariesByCO" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
