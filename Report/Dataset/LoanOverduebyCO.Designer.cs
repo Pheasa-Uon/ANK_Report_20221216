@@ -321,6 +321,8 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnpenalty_rate;
             
+            private global::System.Data.DataColumn columnexpired_date;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public LoanOverduebyCODataTable() {
@@ -524,6 +526,14 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn expired_dateColumn {
+                get {
+                    return this.columnexpired_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -580,7 +590,8 @@ namespace Report.Dataset {
                         string personal_phone, 
                         string address, 
                         string num_of_day_late, 
-                        string penalty_rate) {
+                        string penalty_rate, 
+                        string expired_date) {
                 LoanOverduebyCORow rowLoanOverduebyCORow = ((LoanOverduebyCORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         pawn_officer_id,
@@ -603,7 +614,8 @@ namespace Report.Dataset {
                         personal_phone,
                         address,
                         num_of_day_late,
-                        penalty_rate};
+                        penalty_rate,
+                        expired_date};
                 rowLoanOverduebyCORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowLoanOverduebyCORow);
                 return rowLoanOverduebyCORow;
@@ -647,6 +659,7 @@ namespace Report.Dataset {
                 this.columnaddress = base.Columns["address"];
                 this.columnnum_of_day_late = base.Columns["num_of_day_late"];
                 this.columnpenalty_rate = base.Columns["penalty_rate"];
+                this.columnexpired_date = base.Columns["expired_date"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -694,6 +707,8 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columnnum_of_day_late);
                 this.columnpenalty_rate = new global::System.Data.DataColumn("penalty_rate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpenalty_rate);
+                this.columnexpired_date = new global::System.Data.DataColumn("expired_date", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnexpired_date);
                 this.ExtendedProperties.Add("Generator_TablePropName", "_LoanOverduebyCO");
                 this.ExtendedProperties.Add("Generator_UserTableName", "LoanOverduebyCO");
             }
@@ -1174,6 +1189,22 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string expired_date {
+                get {
+                    try {
+                        return ((string)(this[this.tableLoanOverduebyCO.expired_dateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'expired_date\' in table \'LoanOverduebyCO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableLoanOverduebyCO.expired_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Ispawn_officer_idNull() {
                 return this.IsNull(this.tableLoanOverduebyCO.pawn_officer_idColumn);
             }
@@ -1422,6 +1453,18 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setpenalty_rateNull() {
                 this[this.tableLoanOverduebyCO.penalty_rateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isexpired_dateNull() {
+                return this.IsNull(this.tableLoanOverduebyCO.expired_dateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setexpired_dateNull() {
+                this[this.tableLoanOverduebyCO.expired_dateColumn] = global::System.Convert.DBNull;
             }
         }
         
