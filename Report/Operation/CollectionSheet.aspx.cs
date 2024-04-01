@@ -51,6 +51,7 @@ namespace Report.Operation
             {
                 sql = "	SELECT ST.ticket_no,CUS.customer_name,CUS.personal_phone, 		" +
                         "   CUR.currency,PL.principle_less princ_outstanding, ST.due_date, 	" +
+                        "   C.disbursement_date,C.pawn_price,C.expired_date, " +
                         "   ST.interest_less,ST.principle_less,ST.penalty_less, 	" +
                         "   P.lob_name,SI.name CO_Name, 							" +
                         "   case when ticket_status ='P' then 'Paid' 				" +
@@ -76,6 +77,7 @@ namespace Report.Operation
             {
                 sql = "	SELECT ST.ticket_no,CUS.customer_name,CUS.personal_phone, 		" +
                         "   CUR.currency,PL.principle_less princ_outstanding, ST.due_date, 	" +
+                        "   C.disbursement_date,C.pawn_price,C.expired_date, " +
                         "   ST.interest_less,ST.principle_less,ST.penalty_less, 	" +
                         "   P.lob_name,SI.name CO_Name, 							" +
                         "   case when ticket_status ='P' then 'Paid' 				" +

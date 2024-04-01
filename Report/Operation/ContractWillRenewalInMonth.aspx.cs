@@ -25,8 +25,6 @@ namespace Report.Operation
             {
                 DataHelper.checkLoginSession();
                 DataHelper.populateBranchDDL(ddBranchName, DataHelper.getUserId());
-                DataHelper.populateBranchDDL(ddBranchName, DataHelper.getUserId());
-                DataHelper.populateBranchDDL(ddBranchName, DataHelper.getUserId());
                 populateOfficer();
                 var date = DataHelper.getSystemDateTextbox();
                 dtpFromDate.Text = date;

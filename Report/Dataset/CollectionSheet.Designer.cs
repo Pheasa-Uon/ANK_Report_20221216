@@ -303,6 +303,12 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnticket_status;
             
+            private global::System.Data.DataColumn columndisbursement_date;
+            
+            private global::System.Data.DataColumn columnpawn_price;
+            
+            private global::System.Data.DataColumn columnexpired_date;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public CollectionSheetDSDataTable() {
@@ -434,6 +440,30 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn disbursement_dateColumn {
+                get {
+                    return this.columndisbursement_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn pawn_priceColumn {
+                get {
+                    return this.columnpawn_price;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn expired_dateColumn {
+                get {
+                    return this.columnexpired_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -469,7 +499,7 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CollectionSheetDSRow AddCollectionSheetDSRow(string ticket_no, string personal_phone, string currency, string customer_name, string princ_outstanding, string interest_less, string principle_less, string penalty_less, string due_date, string lob_name, string CO_Name, string ticket_status) {
+            public CollectionSheetDSRow AddCollectionSheetDSRow(string ticket_no, string personal_phone, string currency, string customer_name, string princ_outstanding, string interest_less, string principle_less, string penalty_less, string due_date, string lob_name, string CO_Name, string ticket_status, string disbursement_date, string pawn_price, string expired_date) {
                 CollectionSheetDSRow rowCollectionSheetDSRow = ((CollectionSheetDSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ticket_no,
@@ -483,7 +513,10 @@ namespace Report.Dataset {
                         due_date,
                         lob_name,
                         CO_Name,
-                        ticket_status};
+                        ticket_status,
+                        disbursement_date,
+                        pawn_price,
+                        expired_date};
                 rowCollectionSheetDSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCollectionSheetDSRow);
                 return rowCollectionSheetDSRow;
@@ -518,6 +551,9 @@ namespace Report.Dataset {
                 this.columnlob_name = base.Columns["lob_name"];
                 this.columnCO_Name = base.Columns["CO_Name"];
                 this.columnticket_status = base.Columns["ticket_status"];
+                this.columndisbursement_date = base.Columns["disbursement_date"];
+                this.columnpawn_price = base.Columns["pawn_price"];
+                this.columnexpired_date = base.Columns["expired_date"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -547,6 +583,12 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columnCO_Name);
                 this.columnticket_status = new global::System.Data.DataColumn("ticket_status", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnticket_status);
+                this.columndisbursement_date = new global::System.Data.DataColumn("disbursement_date", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndisbursement_date);
+                this.columnpawn_price = new global::System.Data.DataColumn("pawn_price", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpawn_price);
+                this.columnexpired_date = new global::System.Data.DataColumn("expired_date", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnexpired_date);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -881,6 +923,54 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string disbursement_date {
+                get {
+                    try {
+                        return ((string)(this[this.tableCollectionSheetDS.disbursement_dateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'disbursement_date\' in table \'CollectionSheetDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCollectionSheetDS.disbursement_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string pawn_price {
+                get {
+                    try {
+                        return ((string)(this[this.tableCollectionSheetDS.pawn_priceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'pawn_price\' in table \'CollectionSheetDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCollectionSheetDS.pawn_priceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string expired_date {
+                get {
+                    try {
+                        return ((string)(this[this.tableCollectionSheetDS.expired_dateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'expired_date\' in table \'CollectionSheetDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCollectionSheetDS.expired_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isticket_noNull() {
                 return this.IsNull(this.tableCollectionSheetDS.ticket_noColumn);
             }
@@ -1021,6 +1111,42 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setticket_statusNull() {
                 this[this.tableCollectionSheetDS.ticket_statusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdisbursement_dateNull() {
+                return this.IsNull(this.tableCollectionSheetDS.disbursement_dateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdisbursement_dateNull() {
+                this[this.tableCollectionSheetDS.disbursement_dateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ispawn_priceNull() {
+                return this.IsNull(this.tableCollectionSheetDS.pawn_priceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setpawn_priceNull() {
+                this[this.tableCollectionSheetDS.pawn_priceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isexpired_dateNull() {
+                return this.IsNull(this.tableCollectionSheetDS.expired_dateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setexpired_dateNull() {
+                this[this.tableCollectionSheetDS.expired_dateColumn] = global::System.Convert.DBNull;
             }
         }
         
