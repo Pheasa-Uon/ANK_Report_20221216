@@ -802,6 +802,17 @@
     <Content Include="Dataset\SummaryReport.xsc">
       <DependentUpon>SummaryReport.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\SummaryLoanOverdue.xsc">
+      <DependentUpon>SummaryLoanOverdue.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\SummaryLoanOverdue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaryLoanOverdue.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\SummaryLoanOverdue.xss">
+      <DependentUpon>SummaryLoanOverdue.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\SummaryReport.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -921,6 +932,7 @@
     <Content Include="Operation\StockReport.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Operation\SummaryLoanOverdue.aspx" />
     <Content Include="Operation\SummaryReport.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1429,6 +1441,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StockReport.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\SummaryLoanOverdue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaryLoanOverdue.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\SummaryReport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1642,6 +1659,13 @@
     </Compile>
     <Compile Include="Operation\ProductivityConsolidateByLOBOnDate.aspx.designer.cs">
       <DependentUpon>ProductivityConsolidateByLOBOnDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\SummaryLoanOverdue.aspx.cs">
+      <DependentUpon>SummaryLoanOverdue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\SummaryLoanOverdue.aspx.designer.cs">
+      <DependentUpon>SummaryLoanOverdue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utils\AES.cs" />
     <Compile Include="Utils\ClsCrypto.cs" />
@@ -1885,6 +1909,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accounting\StatementOfAccount.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Operation\SummaryLoanOverdue.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

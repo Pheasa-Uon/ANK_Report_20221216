@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SummaryLoanOverdue" targetNamespace="http://tempuri.org/SummaryLoanOverdue.xsd" xmlns:mstns="http://tempuri.org/SummaryLoanOverdue.xsd" xmlns="http://tempuri.org/SummaryLoanOverdue.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SummaryLoanOverdue" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SummaryLoanOverdue" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SummaryLoanOverdue">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SummaryLoanOverdue" msprop:Generator_RowClassName="SummaryLoanOverdueRow" msprop:Generator_RowEvHandlerName="SummaryLoanOverdueRowChangeEventHandler" msprop:Generator_RowDeletedName="SummaryLoanOverdueRowDeleted" msprop:Generator_RowDeletingName="SummaryLoanOverdueRowDeleting" msprop:Generator_RowEvArgName="SummaryLoanOverdueRowChangeEvent" msprop:Generator_TablePropName="_SummaryLoanOverdue" msprop:Generator_RowChangedName="SummaryLoanOverdueRowChanged" msprop:Generator_UserTableName="SummaryLoanOverdue" msprop:Generator_RowChangingName="SummaryLoanOverdueRowChanging" msprop:Generator_TableClassName="SummaryLoanOverdueDataTable" msprop:Generator_TableVarName="tableSummaryLoanOverdue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="customer_count1to30" msprop:Generator_UserColumnName="customer_count1to30" msprop:Generator_ColumnPropNameInTable="customer_count1to30Column" msprop:Generator_ColumnPropNameInRow="customer_count1to30" msprop:Generator_ColumnVarNameInTable="columncustomer_count1to30" type="xs:string" minOccurs="0" />
+              <xs:element name="customer_count31" msprop:Generator_UserColumnName="customer_count31" msprop:Generator_ColumnPropNameInTable="customer_count31Column" msprop:Generator_ColumnPropNameInRow="customer_count31" msprop:Generator_ColumnVarNameInTable="columncustomer_count31" type="xs:string" minOccurs="0" />
+              <xs:element name="contract_count1to30" msprop:Generator_UserColumnName="contract_count1to30" msprop:Generator_ColumnPropNameInTable="contract_count1to30Column" msprop:Generator_ColumnPropNameInRow="contract_count1to30" msprop:Generator_ColumnVarNameInTable="columncontract_count1to30" type="xs:string" minOccurs="0" />
+              <xs:element name="contract_count31" msprop:Generator_UserColumnName="contract_count31" msprop:Generator_ColumnPropNameInTable="contract_count31Column" msprop:Generator_ColumnPropNameInRow="contract_count31" msprop:Generator_ColumnVarNameInTable="columncontract_count31" type="xs:string" minOccurs="0" />
+              <xs:element name="interestoverdue1to30" msprop:Generator_UserColumnName="interestoverdue1to30" msprop:Generator_ColumnPropNameInTable="interestoverdue1to30Column" msprop:Generator_ColumnPropNameInRow="interestoverdue1to30" msprop:Generator_ColumnVarNameInTable="columninterestoverdue1to30" type="xs:string" minOccurs="0" />
+              <xs:element name="interestoverdue31" msprop:Generator_UserColumnName="interestoverdue31" msprop:Generator_ColumnPropNameInTable="interestoverdue31Column" msprop:Generator_ColumnPropNameInRow="interestoverdue31" msprop:Generator_ColumnVarNameInTable="columninterestoverdue31" type="xs:string" minOccurs="0" />
+              <xs:element name="collateral_count1to30" msprop:Generator_UserColumnName="collateral_count1to30" msprop:Generator_ColumnPropNameInTable="collateral_count1to30Column" msprop:Generator_ColumnPropNameInRow="collateral_count1to30" msprop:Generator_ColumnVarNameInTable="columncollateral_count1to30" type="xs:string" minOccurs="0" />
+              <xs:element name="collateral_count31" msprop:Generator_UserColumnName="collateral_count31" msprop:Generator_ColumnPropNameInTable="collateral_count31Column" msprop:Generator_ColumnPropNameInRow="collateral_count31" msprop:Generator_ColumnVarNameInTable="columncollateral_count31" type="xs:string" minOccurs="0" />
+              <xs:element name="totalcustomer" msprop:Generator_ColumnPropNameInRow="totalcustomer" msprop:Generator_ColumnPropNameInTable="totalcustomerColumn" msprop:Generator_ColumnVarNameInTable="columntotalcustomer" msprop:Generator_UserColumnName="totalcustomer" type="xs:string" minOccurs="0" />
+              <xs:element name="totalcontract" msprop:Generator_ColumnPropNameInRow="totalcontract" msprop:Generator_ColumnPropNameInTable="totalcontractColumn" msprop:Generator_ColumnVarNameInTable="columntotalcontract" msprop:Generator_UserColumnName="totalcontract" type="xs:string" minOccurs="0" />
+              <xs:element name="totalinterestoverdue" msprop:Generator_ColumnPropNameInRow="totalinterestoverdue" msprop:Generator_ColumnPropNameInTable="totalinterestoverdueColumn" msprop:Generator_ColumnVarNameInTable="columntotalinterestoverdue" msprop:Generator_UserColumnName="totalinterestoverdue" type="xs:string" minOccurs="0" />
+              <xs:element name="totalcollateral" msprop:Generator_ColumnPropNameInRow="totalcollateral" msprop:Generator_ColumnPropNameInTable="totalcollateralColumn" msprop:Generator_ColumnVarNameInTable="columntotalcollateral" msprop:Generator_UserColumnName="totalcollateral" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
