@@ -162,6 +162,7 @@
     <Content Include="Accounting\AccrualInterest.aspx" />
     <Content Include="Accounting\AccrualInterestOnPawn.aspx" />
     <Content Include="Accounting\BalanceSheet.aspx" />
+    <Content Include="Accounting\BalanceSheetByPeriod.aspx" />
     <Content Include="Accounting\CaseAvailableBalance.aspx" />
     <Content Include="Accounting\CashCollectionOnDate.aspx" />
     <Content Include="Accounting\CashConsolidate.aspx" />
@@ -292,6 +293,17 @@
     </None>
     <Content Include="Dataset\AccrualInterest.xss">
       <DependentUpon>AccrualInterest.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\BalanceSheetByPeriod.xsc">
+      <DependentUpon>BalanceSheetByPeriod.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\BalanceSheetByPeriod.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BalanceSheetByPeriod.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\BalanceSheetByPeriod.xss">
+      <DependentUpon>BalanceSheetByPeriod.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\BranchProductivity.xsd">
       <SubType>Designer</SubType>
@@ -1084,6 +1096,13 @@
     <Compile Include="Accounting\BalanceSheet.aspx.designer.cs">
       <DependentUpon>BalanceSheet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\BalanceSheetByPeriod.aspx.cs">
+      <DependentUpon>BalanceSheetByPeriod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounting\BalanceSheetByPeriod.aspx.designer.cs">
+      <DependentUpon>BalanceSheetByPeriod.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\CaseAvailableBalance.aspx.cs">
       <DependentUpon>CaseAvailableBalance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1240,6 +1259,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AllContractList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\BalanceSheetByPeriod.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalanceSheetByPeriod.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\BranchProductivityAsOf.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1974,6 +1998,9 @@
     <Content Include="Operation\OverdueSmallerThirty.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounting\BalanceSheetByPeriod.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

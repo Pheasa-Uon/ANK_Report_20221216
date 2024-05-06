@@ -2,18 +2,18 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="OverdueLargerThirty">
+    <DataSource Name="OverdueSmallerThirty">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>f9cebd66-efce-40eb-9404-6fb399ed2c36</rd:DataSourceID>
+      <rd:DataSourceID>b5974a43-4c4a-4756-889c-b912359b5cf0</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="OverdueLargerThirtyDS">
+    <DataSet Name="OverdueSmallerThirtyDS">
       <Query>
-        <DataSourceName>OverdueLargerThirty</DataSourceName>
+        <DataSourceName>OverdueSmallerThirty</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -63,9 +63,9 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>OverdueLargerThirty</rd:DataSetName>
-        <rd:SchemaPath>C:\FileUser\midas-report-ank\ANK_Report_20221216\Report\Dataset\OverdueLargerThirty.xsd</rd:SchemaPath>
-        <rd:TableName>OverdueLargerThirty_DS</rd:TableName>
+        <rd:DataSetName>OverdueSmallerThirty</rd:DataSetName>
+        <rd:SchemaPath>C:\FileUser\midas-report-ank\ANK_Report_20221216\Report\Dataset\OverdueSmallerThirty.xsd</rd:SchemaPath>
+        <rd:TableName>OverdueSmallerThirty_DS</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -83,7 +83,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Overdue Larger 30 Day</Value>
+                    <Value>Overdue Smaller 30 Day</Value>
                     <Style>
                       <FontFamily>Calibri</FontFamily>
                       <FontSize>16pt</FontSize>
@@ -98,8 +98,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.20123in</Top>
-            <Left>5.97646in</Left>
+            <Top>0.52561in</Top>
+            <Left>5.8148in</Left>
             <Height>0.36218in</Height>
             <Width>4.64251in</Width>
             <Style>
@@ -127,8 +127,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0.82901in</Top>
-            <Left>0.2682in</Left>
+            <Top>0.91172in</Top>
+            <Left>0.26487in</Left>
             <Height>0.25in</Height>
             <Width>0.89083in</Width>
             <ZIndex>1</ZIndex>
@@ -149,10 +149,10 @@
                   <Width>0.55208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.15833in</Width>
+                  <Width>1.17197in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.65474in</Width>
+                  <Width>1.91961in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.51042in</Width>
@@ -161,19 +161,19 @@
                   <Width>1.98579in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29378in</Width>
+                  <Width>1.06878in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.39212in</Width>
+                  <Width>1.12545in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.36667in</Width>
+                  <Width>1.175in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.21212in</Width>
+                  <Width>1.07045in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.05494in</Width>
@@ -231,7 +231,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value># Loan Code</Value>
+                                  <Value># Loan code</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -404,14 +404,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox17">
+                        <Textbox Name="Textbox13">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Disburment</Value>
+                                  <Value>disbursment</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -422,7 +422,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1208,7 +1208,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox21">
+                        <Textbox Name="Textbox15">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1224,7 +1224,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1427,11 +1427,11 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>OverdueLargerThirtyDS</DataSetName>
-            <Top>1.13457in</Top>
-            <Left>0.2682in</Left>
+            <DataSetName>OverdueSmallerThirtyDS</DataSetName>
+            <Top>1.21728in</Top>
+            <Left>0.26487in</Left>
             <Height>0.7in</Height>
-            <Width>14.55118in</Width>
+            <Width>14.00469in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1460,7 +1460,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>CompanyName</rd:DefaultName>
-            <Left>5.97646in</Left>
+            <Top>0.08271in</Top>
+            <Left>5.8148in</Left>
             <Height>0.37346in</Height>
             <Width>4.64251in</Width>
             <ZIndex>3</ZIndex>
@@ -1489,8 +1490,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Branch</rd:DefaultName>
-            <Top>0.82901in</Top>
-            <Left>1.17292in</Left>
+            <Top>0.91172in</Top>
+            <Left>1.16959in</Left>
             <Height>0.25in</Height>
             <Width>3.07739in</Width>
             <ZIndex>4</ZIndex>
@@ -1505,10 +1506,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.68457in</Height>
+        <Height>3.53125in</Height>
         <Style />
       </Body>
-      <Width>16.40714in</Width>
+      <Width>15.53868in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1551,5 +1552,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>e629e286-bfdd-4489-b3ba-d4c9b1979321</rd:ReportID>
+  <rd:ReportID>37e66b0f-1b42-451f-a541-1c599e250d5d</rd:ReportID>
 </Report>
