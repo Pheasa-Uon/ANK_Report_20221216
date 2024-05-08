@@ -863,7 +863,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>BALANCE SHEET BY PERIOD</Value>
+                    <Value>BALANCE SHEET Consolidate</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontSize>12pt</FontSize>
