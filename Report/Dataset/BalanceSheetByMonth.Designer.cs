@@ -20,19 +20,17 @@ namespace Report.Dataset {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BalanceSheetByPeriod")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BalanceSheetByMonth")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BalanceSheetByPeriod : global::System.Data.DataSet {
+    public partial class BalanceSheetByMonth : global::System.Data.DataSet {
         
-        private PS_BSPD_DSDataTable tablePS_BSPD_DS;
-        
-        private PS_BSP_DSDataTable tablePS_BSP_DS;
+        private BalanceSheetByMonthDSDataTable tableBalanceSheetByMonthDS;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public BalanceSheetByPeriod() {
+        public BalanceSheetByMonth() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +41,7 @@ namespace Report.Dataset {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected BalanceSheetByPeriod(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BalanceSheetByMonth(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -56,11 +54,8 @@ namespace Report.Dataset {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["PS_BSPD_DS"] != null)) {
-                    base.Tables.Add(new PS_BSPD_DSDataTable(ds.Tables["PS_BSPD_DS"]));
-                }
-                if ((ds.Tables["PS_BSP_DS"] != null)) {
-                    base.Tables.Add(new PS_BSP_DSDataTable(ds.Tables["PS_BSP_DS"]));
+                if ((ds.Tables["BalanceSheetByMonthDS"] != null)) {
+                    base.Tables.Add(new BalanceSheetByMonthDSDataTable(ds.Tables["BalanceSheetByMonthDS"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -84,19 +79,9 @@ namespace Report.Dataset {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PS_BSPD_DSDataTable PS_BSPD_DS {
+        public BalanceSheetByMonthDSDataTable BalanceSheetByMonthDS {
             get {
-                return this.tablePS_BSPD_DS;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PS_BSP_DSDataTable PS_BSP_DS {
-            get {
-                return this.tablePS_BSP_DS;
+                return this.tableBalanceSheetByMonthDS;
             }
         }
         
@@ -142,7 +127,7 @@ namespace Report.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BalanceSheetByPeriod cln = ((BalanceSheetByPeriod)(base.Clone()));
+            BalanceSheetByMonth cln = ((BalanceSheetByMonth)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -167,11 +152,8 @@ namespace Report.Dataset {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["PS_BSPD_DS"] != null)) {
-                    base.Tables.Add(new PS_BSPD_DSDataTable(ds.Tables["PS_BSPD_DS"]));
-                }
-                if ((ds.Tables["PS_BSP_DS"] != null)) {
-                    base.Tables.Add(new PS_BSP_DSDataTable(ds.Tables["PS_BSP_DS"]));
+                if ((ds.Tables["BalanceSheetByMonthDS"] != null)) {
+                    base.Tables.Add(new BalanceSheetByMonthDSDataTable(ds.Tables["BalanceSheetByMonthDS"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -206,16 +188,10 @@ namespace Report.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablePS_BSPD_DS = ((PS_BSPD_DSDataTable)(base.Tables["PS_BSPD_DS"]));
+            this.tableBalanceSheetByMonthDS = ((BalanceSheetByMonthDSDataTable)(base.Tables["BalanceSheetByMonthDS"]));
             if ((initTable == true)) {
-                if ((this.tablePS_BSPD_DS != null)) {
-                    this.tablePS_BSPD_DS.InitVars();
-                }
-            }
-            this.tablePS_BSP_DS = ((PS_BSP_DSDataTable)(base.Tables["PS_BSP_DS"]));
-            if ((initTable == true)) {
-                if ((this.tablePS_BSP_DS != null)) {
-                    this.tablePS_BSP_DS.InitVars();
+                if ((this.tableBalanceSheetByMonthDS != null)) {
+                    this.tableBalanceSheetByMonthDS.InitVars();
                 }
             }
         }
@@ -223,26 +199,18 @@ namespace Report.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BalanceSheetByPeriod";
+            this.DataSetName = "BalanceSheetByMonth";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BalanceSheetByPeriod.xsd";
+            this.Namespace = "http://tempuri.org/BalanceSheetByMonth.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablePS_BSPD_DS = new PS_BSPD_DSDataTable();
-            base.Tables.Add(this.tablePS_BSPD_DS);
-            this.tablePS_BSP_DS = new PS_BSP_DSDataTable();
-            base.Tables.Add(this.tablePS_BSP_DS);
+            this.tableBalanceSheetByMonthDS = new BalanceSheetByMonthDSDataTable();
+            base.Tables.Add(this.tableBalanceSheetByMonthDS);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializePS_BSPD_DS() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializePS_BSP_DS() {
+        private bool ShouldSerializeBalanceSheetByMonthDS() {
             return false;
         }
         
@@ -257,7 +225,7 @@ namespace Report.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BalanceSheetByPeriod ds = new BalanceSheetByPeriod();
+            BalanceSheetByMonth ds = new BalanceSheetByMonth();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -302,25 +270,20 @@ namespace Report.Dataset {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void PS_BSPD_DSRowChangeEventHandler(object sender, PS_BSPD_DSRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void PS_BSP_DSRowChangeEventHandler(object sender, PS_BSP_DSRowChangeEvent e);
+        public delegate void BalanceSheetByMonthDSRowChangeEventHandler(object sender, BalanceSheetByMonthDSRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PS_BSPD_DSDataTable : global::System.Data.TypedTableBase<PS_BSPD_DSRow> {
+        public partial class BalanceSheetByMonthDSDataTable : global::System.Data.TypedTableBase<BalanceSheetByMonthDSRow> {
             
             private global::System.Data.DataColumn columnglm;
             
-            private global::System.Data.DataColumn columngl;
-            
             private global::System.Data.DataColumn columnglnm;
             
-            private global::System.Data.DataColumn columnbalance;
+            private global::System.Data.DataColumn columngl;
             
             private global::System.Data.DataColumn columngl_name;
             
@@ -328,12 +291,20 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnac_amt;
             
+            private global::System.Data.DataColumn columnmon;
+            
+            private global::System.Data.DataColumn columnyear;
+            
+            private global::System.Data.DataColumn columncurrent_amt;
+            
+            private global::System.Data.DataColumn columnprevious_amt;
+            
             private global::System.Data.DataColumn columnaccount_type;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSPD_DSDataTable() {
-                this.TableName = "PS_BSPD_DS";
+            public BalanceSheetByMonthDSDataTable() {
+                this.TableName = "BalanceSheetByMonthDS";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -341,7 +312,7 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal PS_BSPD_DSDataTable(global::System.Data.DataTable table) {
+            internal BalanceSheetByMonthDSDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -358,7 +329,7 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected PS_BSPD_DSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected BalanceSheetByMonthDSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -373,14 +344,6 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn glColumn {
-                get {
-                    return this.columngl;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn glnmColumn {
                 get {
                     return this.columnglnm;
@@ -389,9 +352,9 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn balanceColumn {
+            public global::System.Data.DataColumn glColumn {
                 get {
-                    return this.columnbalance;
+                    return this.columngl;
                 }
             }
             
@@ -421,6 +384,38 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn monColumn {
+                get {
+                    return this.columnmon;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn yearColumn {
+                get {
+                    return this.columnyear;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn current_amtColumn {
+                get {
+                    return this.columncurrent_amt;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn previous_amtColumn {
+                get {
+                    return this.columnprevious_amt;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn account_typeColumn {
                 get {
                     return this.columnaccount_type;
@@ -438,52 +433,55 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSPD_DSRow this[int index] {
+            public BalanceSheetByMonthDSRow this[int index] {
                 get {
-                    return ((PS_BSPD_DSRow)(this.Rows[index]));
+                    return ((BalanceSheetByMonthDSRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSPD_DSRowChangeEventHandler PS_BSPD_DSRowChanging;
+            public event BalanceSheetByMonthDSRowChangeEventHandler BalanceSheetByMonthDSRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSPD_DSRowChangeEventHandler PS_BSPD_DSRowChanged;
+            public event BalanceSheetByMonthDSRowChangeEventHandler BalanceSheetByMonthDSRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSPD_DSRowChangeEventHandler PS_BSPD_DSRowDeleting;
+            public event BalanceSheetByMonthDSRowChangeEventHandler BalanceSheetByMonthDSRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSPD_DSRowChangeEventHandler PS_BSPD_DSRowDeleted;
+            public event BalanceSheetByMonthDSRowChangeEventHandler BalanceSheetByMonthDSRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddPS_BSPD_DSRow(PS_BSPD_DSRow row) {
+            public void AddBalanceSheetByMonthDSRow(BalanceSheetByMonthDSRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSPD_DSRow AddPS_BSPD_DSRow(string glm, string gl, string glnm, string balance, string gl_name, string acc_class, string ac_amt, string account_type) {
-                PS_BSPD_DSRow rowPS_BSPD_DSRow = ((PS_BSPD_DSRow)(this.NewRow()));
+            public BalanceSheetByMonthDSRow AddBalanceSheetByMonthDSRow(string glm, string glnm, string gl, string gl_name, string acc_class, string ac_amt, string mon, string year, string current_amt, string previous_amt, string account_type) {
+                BalanceSheetByMonthDSRow rowBalanceSheetByMonthDSRow = ((BalanceSheetByMonthDSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         glm,
-                        gl,
                         glnm,
-                        balance,
+                        gl,
                         gl_name,
                         acc_class,
                         ac_amt,
+                        mon,
+                        year,
+                        current_amt,
+                        previous_amt,
                         account_type};
-                rowPS_BSPD_DSRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPS_BSPD_DSRow);
-                return rowPS_BSPD_DSRow;
+                rowBalanceSheetByMonthDSRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowBalanceSheetByMonthDSRow);
+                return rowBalanceSheetByMonthDSRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                PS_BSPD_DSDataTable cln = ((PS_BSPD_DSDataTable)(base.Clone()));
+                BalanceSheetByMonthDSDataTable cln = ((BalanceSheetByMonthDSDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -491,19 +489,22 @@ namespace Report.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new PS_BSPD_DSDataTable();
+                return new BalanceSheetByMonthDSDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnglm = base.Columns["glm"];
-                this.columngl = base.Columns["gl"];
                 this.columnglnm = base.Columns["glnm"];
-                this.columnbalance = base.Columns["balance"];
+                this.columngl = base.Columns["gl"];
                 this.columngl_name = base.Columns["gl_name"];
                 this.columnacc_class = base.Columns["acc_class"];
                 this.columnac_amt = base.Columns["ac_amt"];
+                this.columnmon = base.Columns["mon"];
+                this.columnyear = base.Columns["year"];
+                this.columncurrent_amt = base.Columns["current_amt"];
+                this.columnprevious_amt = base.Columns["previous_amt"];
                 this.columnaccount_type = base.Columns["account_type"];
             }
             
@@ -512,46 +513,52 @@ namespace Report.Dataset {
             private void InitClass() {
                 this.columnglm = new global::System.Data.DataColumn("glm", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnglm);
-                this.columngl = new global::System.Data.DataColumn("gl", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columngl);
                 this.columnglnm = new global::System.Data.DataColumn("glnm", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnglnm);
-                this.columnbalance = new global::System.Data.DataColumn("balance", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnbalance);
+                this.columngl = new global::System.Data.DataColumn("gl", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columngl);
                 this.columngl_name = new global::System.Data.DataColumn("gl_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columngl_name);
                 this.columnacc_class = new global::System.Data.DataColumn("acc_class", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnacc_class);
                 this.columnac_amt = new global::System.Data.DataColumn("ac_amt", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnac_amt);
+                this.columnmon = new global::System.Data.DataColumn("mon", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmon);
+                this.columnyear = new global::System.Data.DataColumn("year", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnyear);
+                this.columncurrent_amt = new global::System.Data.DataColumn("current_amt", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncurrent_amt);
+                this.columnprevious_amt = new global::System.Data.DataColumn("previous_amt", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnprevious_amt);
                 this.columnaccount_type = new global::System.Data.DataColumn("account_type", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnaccount_type);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSPD_DSRow NewPS_BSPD_DSRow() {
-                return ((PS_BSPD_DSRow)(this.NewRow()));
+            public BalanceSheetByMonthDSRow NewBalanceSheetByMonthDSRow() {
+                return ((BalanceSheetByMonthDSRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PS_BSPD_DSRow(builder);
+                return new BalanceSheetByMonthDSRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(PS_BSPD_DSRow);
+                return typeof(BalanceSheetByMonthDSRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.PS_BSPD_DSRowChanged != null)) {
-                    this.PS_BSPD_DSRowChanged(this, new PS_BSPD_DSRowChangeEvent(((PS_BSPD_DSRow)(e.Row)), e.Action));
+                if ((this.BalanceSheetByMonthDSRowChanged != null)) {
+                    this.BalanceSheetByMonthDSRowChanged(this, new BalanceSheetByMonthDSRowChangeEvent(((BalanceSheetByMonthDSRow)(e.Row)), e.Action));
                 }
             }
             
@@ -559,8 +566,8 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.PS_BSPD_DSRowChanging != null)) {
-                    this.PS_BSPD_DSRowChanging(this, new PS_BSPD_DSRowChangeEvent(((PS_BSPD_DSRow)(e.Row)), e.Action));
+                if ((this.BalanceSheetByMonthDSRowChanging != null)) {
+                    this.BalanceSheetByMonthDSRowChanging(this, new BalanceSheetByMonthDSRowChangeEvent(((BalanceSheetByMonthDSRow)(e.Row)), e.Action));
                 }
             }
             
@@ -568,8 +575,8 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.PS_BSPD_DSRowDeleted != null)) {
-                    this.PS_BSPD_DSRowDeleted(this, new PS_BSPD_DSRowChangeEvent(((PS_BSPD_DSRow)(e.Row)), e.Action));
+                if ((this.BalanceSheetByMonthDSRowDeleted != null)) {
+                    this.BalanceSheetByMonthDSRowDeleted(this, new BalanceSheetByMonthDSRowChangeEvent(((BalanceSheetByMonthDSRow)(e.Row)), e.Action));
                 }
             }
             
@@ -577,14 +584,14 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.PS_BSPD_DSRowDeleting != null)) {
-                    this.PS_BSPD_DSRowDeleting(this, new PS_BSPD_DSRowChangeEvent(((PS_BSPD_DSRow)(e.Row)), e.Action));
+                if ((this.BalanceSheetByMonthDSRowDeleting != null)) {
+                    this.BalanceSheetByMonthDSRowDeleting(this, new BalanceSheetByMonthDSRowChangeEvent(((BalanceSheetByMonthDSRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovePS_BSPD_DSRow(PS_BSPD_DSRow row) {
+            public void RemoveBalanceSheetByMonthDSRow(BalanceSheetByMonthDSRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -593,7 +600,7 @@ namespace Report.Dataset {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BalanceSheetByPeriod ds = new BalanceSheetByPeriod();
+                BalanceSheetByMonth ds = new BalanceSheetByMonth();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -611,310 +618,7 @@ namespace Report.Dataset {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PS_BSPD_DSDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PS_BSP_DSDataTable : global::System.Data.TypedTableBase<PS_BSP_DSRow> {
-            
-            private global::System.Data.DataColumn columntotal_l;
-            
-            private global::System.Data.DataColumn columntotal_c;
-            
-            private global::System.Data.DataColumn columntotal_i;
-            
-            private global::System.Data.DataColumn columntotal_e;
-            
-            private global::System.Data.DataColumn columntotal_l_c;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSP_DSDataTable() {
-                this.TableName = "PS_BSP_DS";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal PS_BSP_DSDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected PS_BSP_DSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn total_lColumn {
-                get {
-                    return this.columntotal_l;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn total_cColumn {
-                get {
-                    return this.columntotal_c;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn total_iColumn {
-                get {
-                    return this.columntotal_i;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn total_eColumn {
-                get {
-                    return this.columntotal_e;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn total_l_cColumn {
-                get {
-                    return this.columntotal_l_c;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSP_DSRow this[int index] {
-                get {
-                    return ((PS_BSP_DSRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSP_DSRowChangeEventHandler PS_BSP_DSRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSP_DSRowChangeEventHandler PS_BSP_DSRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSP_DSRowChangeEventHandler PS_BSP_DSRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event PS_BSP_DSRowChangeEventHandler PS_BSP_DSRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddPS_BSP_DSRow(PS_BSP_DSRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSP_DSRow AddPS_BSP_DSRow(string total_l, string total_c, string total_i, string total_e, string total_l_c) {
-                PS_BSP_DSRow rowPS_BSP_DSRow = ((PS_BSP_DSRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        total_l,
-                        total_c,
-                        total_i,
-                        total_e,
-                        total_l_c};
-                rowPS_BSP_DSRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPS_BSP_DSRow);
-                return rowPS_BSP_DSRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                PS_BSP_DSDataTable cln = ((PS_BSP_DSDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new PS_BSP_DSDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columntotal_l = base.Columns["total_l"];
-                this.columntotal_c = base.Columns["total_c"];
-                this.columntotal_i = base.Columns["total_i"];
-                this.columntotal_e = base.Columns["total_e"];
-                this.columntotal_l_c = base.Columns["total_l_c"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columntotal_l = new global::System.Data.DataColumn("total_l", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntotal_l);
-                this.columntotal_c = new global::System.Data.DataColumn("total_c", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntotal_c);
-                this.columntotal_i = new global::System.Data.DataColumn("total_i", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntotal_i);
-                this.columntotal_e = new global::System.Data.DataColumn("total_e", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntotal_e);
-                this.columntotal_l_c = new global::System.Data.DataColumn("total_l_c", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntotal_l_c);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSP_DSRow NewPS_BSP_DSRow() {
-                return ((PS_BSP_DSRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PS_BSP_DSRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(PS_BSP_DSRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.PS_BSP_DSRowChanged != null)) {
-                    this.PS_BSP_DSRowChanged(this, new PS_BSP_DSRowChangeEvent(((PS_BSP_DSRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.PS_BSP_DSRowChanging != null)) {
-                    this.PS_BSP_DSRowChanging(this, new PS_BSP_DSRowChangeEvent(((PS_BSP_DSRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.PS_BSP_DSRowDeleted != null)) {
-                    this.PS_BSP_DSRowDeleted(this, new PS_BSP_DSRowChangeEvent(((PS_BSP_DSRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.PS_BSP_DSRowDeleting != null)) {
-                    this.PS_BSP_DSRowDeleting(this, new PS_BSP_DSRowChangeEvent(((PS_BSP_DSRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovePS_BSP_DSRow(PS_BSP_DSRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BalanceSheetByPeriod ds = new BalanceSheetByPeriod();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PS_BSP_DSDataTable";
+                attribute2.FixedValue = "BalanceSheetByMonthDSDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -958,15 +662,15 @@ namespace Report.Dataset {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class PS_BSPD_DSRow : global::System.Data.DataRow {
+        public partial class BalanceSheetByMonthDSRow : global::System.Data.DataRow {
             
-            private PS_BSPD_DSDataTable tablePS_BSPD_DS;
+            private BalanceSheetByMonthDSDataTable tableBalanceSheetByMonthDS;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal PS_BSPD_DSRow(global::System.Data.DataRowBuilder rb) : 
+            internal BalanceSheetByMonthDSRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePS_BSPD_DS = ((PS_BSPD_DSDataTable)(this.Table));
+                this.tableBalanceSheetByMonthDS = ((BalanceSheetByMonthDSDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -974,30 +678,14 @@ namespace Report.Dataset {
             public string glm {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.glmColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.glmColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'glm\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'glm\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.glmColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string gl {
-                get {
-                    try {
-                        return ((string)(this[this.tablePS_BSPD_DS.glColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'gl\' in table \'PS_BSPD_DS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePS_BSPD_DS.glColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.glmColumn] = value;
                 }
             }
             
@@ -1006,30 +694,30 @@ namespace Report.Dataset {
             public string glnm {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.glnmColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.glnmColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'glnm\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'glnm\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.glnmColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.glnmColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string balance {
+            public string gl {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.balanceColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.glColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'balance\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'gl\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.balanceColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.glColumn] = value;
                 }
             }
             
@@ -1038,14 +726,14 @@ namespace Report.Dataset {
             public string gl_name {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.gl_nameColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.gl_nameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'gl_name\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'gl_name\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.gl_nameColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.gl_nameColumn] = value;
                 }
             }
             
@@ -1054,14 +742,14 @@ namespace Report.Dataset {
             public string acc_class {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.acc_classColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.acc_classColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'acc_class\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'acc_class\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.acc_classColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.acc_classColumn] = value;
                 }
             }
             
@@ -1070,14 +758,78 @@ namespace Report.Dataset {
             public string ac_amt {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.ac_amtColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.ac_amtColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ac_amt\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ac_amt\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.ac_amtColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.ac_amtColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string mon {
+                get {
+                    try {
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.monColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'mon\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBalanceSheetByMonthDS.monColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string year {
+                get {
+                    try {
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.yearColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'year\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBalanceSheetByMonthDS.yearColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string current_amt {
+                get {
+                    try {
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.current_amtColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'current_amt\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBalanceSheetByMonthDS.current_amtColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string previous_amt {
+                get {
+                    try {
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.previous_amtColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'previous_amt\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBalanceSheetByMonthDS.previous_amtColumn] = value;
                 }
             }
             
@@ -1086,266 +838,147 @@ namespace Report.Dataset {
             public string account_type {
                 get {
                     try {
-                        return ((string)(this[this.tablePS_BSPD_DS.account_typeColumn]));
+                        return ((string)(this[this.tableBalanceSheetByMonthDS.account_typeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'account_type\' in table \'PS_BSPD_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'account_type\' in table \'BalanceSheetByMonthDS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePS_BSPD_DS.account_typeColumn] = value;
+                    this[this.tableBalanceSheetByMonthDS.account_typeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsglmNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.glmColumn);
+                return this.IsNull(this.tableBalanceSheetByMonthDS.glmColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetglmNull() {
-                this[this.tablePS_BSPD_DS.glmColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsglNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.glColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetglNull() {
-                this[this.tablePS_BSPD_DS.glColumn] = global::System.Convert.DBNull;
+                this[this.tableBalanceSheetByMonthDS.glmColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsglnmNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.glnmColumn);
+                return this.IsNull(this.tableBalanceSheetByMonthDS.glnmColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetglnmNull() {
-                this[this.tablePS_BSPD_DS.glnmColumn] = global::System.Convert.DBNull;
+                this[this.tableBalanceSheetByMonthDS.glnmColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsbalanceNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.balanceColumn);
+            public bool IsglNull() {
+                return this.IsNull(this.tableBalanceSheetByMonthDS.glColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetbalanceNull() {
-                this[this.tablePS_BSPD_DS.balanceColumn] = global::System.Convert.DBNull;
+            public void SetglNull() {
+                this[this.tableBalanceSheetByMonthDS.glColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isgl_nameNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.gl_nameColumn);
+                return this.IsNull(this.tableBalanceSheetByMonthDS.gl_nameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setgl_nameNull() {
-                this[this.tablePS_BSPD_DS.gl_nameColumn] = global::System.Convert.DBNull;
+                this[this.tableBalanceSheetByMonthDS.gl_nameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isacc_classNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.acc_classColumn);
+                return this.IsNull(this.tableBalanceSheetByMonthDS.acc_classColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setacc_classNull() {
-                this[this.tablePS_BSPD_DS.acc_classColumn] = global::System.Convert.DBNull;
+                this[this.tableBalanceSheetByMonthDS.acc_classColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isac_amtNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.ac_amtColumn);
+                return this.IsNull(this.tableBalanceSheetByMonthDS.ac_amtColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setac_amtNull() {
-                this[this.tablePS_BSPD_DS.ac_amtColumn] = global::System.Convert.DBNull;
+                this[this.tableBalanceSheetByMonthDS.ac_amtColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsmonNull() {
+                return this.IsNull(this.tableBalanceSheetByMonthDS.monColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetmonNull() {
+                this[this.tableBalanceSheetByMonthDS.monColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsyearNull() {
+                return this.IsNull(this.tableBalanceSheetByMonthDS.yearColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetyearNull() {
+                this[this.tableBalanceSheetByMonthDS.yearColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iscurrent_amtNull() {
+                return this.IsNull(this.tableBalanceSheetByMonthDS.current_amtColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setcurrent_amtNull() {
+                this[this.tableBalanceSheetByMonthDS.current_amtColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isprevious_amtNull() {
+                return this.IsNull(this.tableBalanceSheetByMonthDS.previous_amtColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setprevious_amtNull() {
+                this[this.tableBalanceSheetByMonthDS.previous_amtColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isaccount_typeNull() {
-                return this.IsNull(this.tablePS_BSPD_DS.account_typeColumn);
+                return this.IsNull(this.tableBalanceSheetByMonthDS.account_typeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setaccount_typeNull() {
-                this[this.tablePS_BSPD_DS.account_typeColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class PS_BSP_DSRow : global::System.Data.DataRow {
-            
-            private PS_BSP_DSDataTable tablePS_BSP_DS;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal PS_BSP_DSRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tablePS_BSP_DS = ((PS_BSP_DSDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string total_l {
-                get {
-                    try {
-                        return ((string)(this[this.tablePS_BSP_DS.total_lColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'total_l\' in table \'PS_BSP_DS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePS_BSP_DS.total_lColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string total_c {
-                get {
-                    try {
-                        return ((string)(this[this.tablePS_BSP_DS.total_cColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'total_c\' in table \'PS_BSP_DS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePS_BSP_DS.total_cColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string total_i {
-                get {
-                    try {
-                        return ((string)(this[this.tablePS_BSP_DS.total_iColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'total_i\' in table \'PS_BSP_DS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePS_BSP_DS.total_iColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string total_e {
-                get {
-                    try {
-                        return ((string)(this[this.tablePS_BSP_DS.total_eColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'total_e\' in table \'PS_BSP_DS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePS_BSP_DS.total_eColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string total_l_c {
-                get {
-                    try {
-                        return ((string)(this[this.tablePS_BSP_DS.total_l_cColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'total_l_c\' in table \'PS_BSP_DS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePS_BSP_DS.total_l_cColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Istotal_lNull() {
-                return this.IsNull(this.tablePS_BSP_DS.total_lColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Settotal_lNull() {
-                this[this.tablePS_BSP_DS.total_lColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Istotal_cNull() {
-                return this.IsNull(this.tablePS_BSP_DS.total_cColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Settotal_cNull() {
-                this[this.tablePS_BSP_DS.total_cColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Istotal_iNull() {
-                return this.IsNull(this.tablePS_BSP_DS.total_iColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Settotal_iNull() {
-                this[this.tablePS_BSP_DS.total_iColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Istotal_eNull() {
-                return this.IsNull(this.tablePS_BSP_DS.total_eColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Settotal_eNull() {
-                this[this.tablePS_BSP_DS.total_eColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Istotal_l_cNull() {
-                return this.IsNull(this.tablePS_BSP_DS.total_l_cColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Settotal_l_cNull() {
-                this[this.tablePS_BSP_DS.total_l_cColumn] = global::System.Convert.DBNull;
+                this[this.tableBalanceSheetByMonthDS.account_typeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1353,56 +986,22 @@ namespace Report.Dataset {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class PS_BSPD_DSRowChangeEvent : global::System.EventArgs {
+        public class BalanceSheetByMonthDSRowChangeEvent : global::System.EventArgs {
             
-            private PS_BSPD_DSRow eventRow;
+            private BalanceSheetByMonthDSRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSPD_DSRowChangeEvent(PS_BSPD_DSRow row, global::System.Data.DataRowAction action) {
+            public BalanceSheetByMonthDSRowChangeEvent(BalanceSheetByMonthDSRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSPD_DSRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class PS_BSP_DSRowChangeEvent : global::System.EventArgs {
-            
-            private PS_BSP_DSRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSP_DSRowChangeEvent(PS_BSP_DSRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PS_BSP_DSRow Row {
+            public BalanceSheetByMonthDSRow Row {
                 get {
                     return this.eventRow;
                 }

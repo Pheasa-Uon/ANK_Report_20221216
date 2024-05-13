@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Balance Sheet By Period" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BalanceSheetByPeriod.aspx.cs" Inherits="Report.Accounting.BalanceSheetByPeriod" %>
+﻿<%@ Page Title="Balance Sheet By Period" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BalanceSheetByMonth.aspx.cs" Inherits="Report.Accounting.BalanceSheetByPeriod" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BalanceSheetByMonth" targetNamespace="http://tempuri.org/BalanceSheetByMonth.xsd" xmlns:mstns="http://tempuri.org/BalanceSheetByMonth.xsd" xmlns="http://tempuri.org/BalanceSheetByMonth.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BalanceSheetByMonth" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="BalanceSheetByMonth" msprop:Generator_DataSetName="BalanceSheetByMonth">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BalanceSheetByMonthDS" msprop:Generator_RowEvHandlerName="BalanceSheetByMonthDSRowChangeEventHandler" msprop:Generator_RowDeletedName="BalanceSheetByMonthDSRowDeleted" msprop:Generator_RowDeletingName="BalanceSheetByMonthDSRowDeleting" msprop:Generator_RowEvArgName="BalanceSheetByMonthDSRowChangeEvent" msprop:Generator_TablePropName="BalanceSheetByMonthDS" msprop:Generator_RowChangedName="BalanceSheetByMonthDSRowChanged" msprop:Generator_RowChangingName="BalanceSheetByMonthDSRowChanging" msprop:Generator_TableClassName="BalanceSheetByMonthDSDataTable" msprop:Generator_RowClassName="BalanceSheetByMonthDSRow" msprop:Generator_TableVarName="tableBalanceSheetByMonthDS" msprop:Generator_UserTableName="BalanceSheetByMonthDS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="glm" msprop:Generator_ColumnPropNameInRow="glm" msprop:Generator_ColumnPropNameInTable="glmColumn" msprop:Generator_ColumnVarNameInTable="columnglm" msprop:Generator_UserColumnName="glm" type="xs:string" minOccurs="0" />
+              <xs:element name="glnm" msprop:Generator_ColumnPropNameInRow="glnm" msprop:Generator_ColumnPropNameInTable="glnmColumn" msprop:Generator_ColumnVarNameInTable="columnglnm" msprop:Generator_UserColumnName="glnm" type="xs:string" minOccurs="0" />
+              <xs:element name="gl" msprop:Generator_ColumnPropNameInRow="gl" msprop:Generator_ColumnPropNameInTable="glColumn" msprop:Generator_ColumnVarNameInTable="columngl" msprop:Generator_UserColumnName="gl" type="xs:string" minOccurs="0" />
+              <xs:element name="gl_name" msprop:Generator_ColumnPropNameInRow="gl_name" msprop:Generator_ColumnPropNameInTable="gl_nameColumn" msprop:Generator_ColumnVarNameInTable="columngl_name" msprop:Generator_UserColumnName="gl_name" type="xs:string" minOccurs="0" />
+              <xs:element name="acc_class" msprop:Generator_ColumnPropNameInRow="acc_class" msprop:Generator_ColumnPropNameInTable="acc_classColumn" msprop:Generator_ColumnVarNameInTable="columnacc_class" msprop:Generator_UserColumnName="acc_class" type="xs:string" minOccurs="0" />
+              <xs:element name="ac_amt" msprop:Generator_ColumnPropNameInRow="ac_amt" msprop:Generator_ColumnPropNameInTable="ac_amtColumn" msprop:Generator_ColumnVarNameInTable="columnac_amt" msprop:Generator_UserColumnName="ac_amt" type="xs:string" minOccurs="0" />
+              <xs:element name="mon" msprop:Generator_ColumnPropNameInRow="mon" msprop:Generator_ColumnPropNameInTable="monColumn" msprop:Generator_ColumnVarNameInTable="columnmon" msprop:Generator_UserColumnName="mon" type="xs:string" minOccurs="0" />
+              <xs:element name="year" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnPropNameInTable="yearColumn" msprop:Generator_ColumnVarNameInTable="columnyear" msprop:Generator_UserColumnName="year" type="xs:string" minOccurs="0" />
+              <xs:element name="current_amt" msprop:Generator_ColumnPropNameInRow="current_amt" msprop:Generator_ColumnPropNameInTable="current_amtColumn" msprop:Generator_ColumnVarNameInTable="columncurrent_amt" msprop:Generator_UserColumnName="current_amt" type="xs:string" minOccurs="0" />
+              <xs:element name="previous_amt" msprop:Generator_ColumnPropNameInRow="previous_amt" msprop:Generator_ColumnPropNameInTable="previous_amtColumn" msprop:Generator_ColumnVarNameInTable="columnprevious_amt" msprop:Generator_UserColumnName="previous_amt" type="xs:string" minOccurs="0" />
+              <xs:element name="account_type" msprop:Generator_ColumnPropNameInRow="account_type" msprop:Generator_ColumnPropNameInTable="account_typeColumn" msprop:Generator_ColumnVarNameInTable="columnaccount_type" msprop:Generator_UserColumnName="account_type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -31,17 +31,16 @@ namespace Report.Accounting
             }
 
         }
-        private void GenerateReport(DataTable PS_BSP_DT, DataTable PS_BSPD_DT)
+        private void GenerateReport(DataTable dt)
         {
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("Branch", ddBranchName.SelectedItem.Text));
             reportParameters.Add(new ReportParameter("FromDate", DateTime.ParseExact(dtpFromDate.Text, format, null).ToString("dd-MMM-yyyy")));
             reportParameters.Add(new ReportParameter("ToDate", DateTime.ParseExact(dtpToDate.Text, format, null).ToString("dd-MMM-yyyy")));
 
-            var PS_BSP_DS = new ReportDataSource("PS_BSP_DS", PS_BSP_DT);
-            var PS_BSPD_DS = new ReportDataSource("PS_BSPD_DS", PS_BSPD_DT);
+            var ds = new ReportDataSource("BalanceSheetByMonthDS", dt);
 
-            DataHelper.generateAccountingReport(ReportViewer1, "BalanceSheetByPeriod", reportParameters, PS_BSP_DS, PS_BSPD_DS);
+            DataHelper.generateAccountingReport(ReportViewer1, "BalanceSheetByMonth", reportParameters, ds);
         }
 
         protected void btnView_Click(object sender, EventArgs e)
@@ -65,18 +64,16 @@ namespace Report.Accounting
                 return;
             }
 
-            var PS_BSP = "PS_BalanceSheetByPeriod";
-            var PS_BSPD = "PS_BalanceSheetByPeriodDetail";
+            var PS_BSM = "PS_BalanceSheetByMonth";
 
             List<Procedure> procedureList = new List<Procedure>();
             procedureList.Add(item: new Procedure() { field_name = "@pBranch", sql_db_type = MySqlDbType.VarChar, value_name = ddBranchName.SelectedItem.Value });
             procedureList.Add(item: new Procedure() { field_name = "@pFRDT", sql_db_type = MySqlDbType.Date, value_name = fromDate });
             procedureList.Add(item: new Procedure() { field_name = "@pTODT", sql_db_type = MySqlDbType.Date, value_name = toDate });
 
-            DataTable PS_BSP_DT = db.getProcedureDataTable(PS_BSP, procedureList);
-            DataTable PS_BSPD_DT = db.getProcedureDataTable(PS_BSPD, procedureList);
+            DataTable DT = db.getProcedureDataTable(PS_BSM, procedureList);
 
-            GenerateReport(PS_BSP_DT, PS_BSPD_DT);
+            GenerateReport(DT);
         }
     }
 }
