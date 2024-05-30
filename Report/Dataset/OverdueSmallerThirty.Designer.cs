@@ -283,7 +283,7 @@ namespace Report.Dataset {
             
             private global::System.Data.DataColumn columnwarehouse;
             
-            private global::System.Data.DataColumn columncontract_no;
+            private global::System.Data.DataColumn columncontract_code;
             
             private global::System.Data.DataColumn columncar;
             
@@ -300,6 +300,12 @@ namespace Report.Dataset {
             private global::System.Data.DataColumn columnprincipal;
             
             private global::System.Data.DataColumn columnnum_of_day_late;
+            
+            private global::System.Data.DataColumn columnname;
+            
+            private global::System.Data.DataColumn columninterest;
+            
+            private global::System.Data.DataColumn columnpenalty;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -352,9 +358,9 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contract_noColumn {
+            public global::System.Data.DataColumn contract_codeColumn {
                 get {
-                    return this.columncontract_no;
+                    return this.columncontract_code;
                 }
             }
             
@@ -424,6 +430,30 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn nameColumn {
+                get {
+                    return this.columnname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn interestColumn {
+                get {
+                    return this.columninterest;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn penaltyColumn {
+                get {
+                    return this.columnpenalty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -459,12 +489,12 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OverdueSmallerThirty_DSRow AddOverdueSmallerThirty_DSRow(string customer_name, string warehouse, string contract_no, string car, string disbursement_date, string pawn_price, string credit_balance, string due_date, string expired_date, string principal, string num_of_day_late) {
+            public OverdueSmallerThirty_DSRow AddOverdueSmallerThirty_DSRow(string customer_name, string warehouse, string contract_code, string car, string disbursement_date, string pawn_price, string credit_balance, string due_date, string expired_date, string principal, string num_of_day_late, string name, string interest, string penalty) {
                 OverdueSmallerThirty_DSRow rowOverdueSmallerThirty_DSRow = ((OverdueSmallerThirty_DSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         customer_name,
                         warehouse,
-                        contract_no,
+                        contract_code,
                         car,
                         disbursement_date,
                         pawn_price,
@@ -472,7 +502,10 @@ namespace Report.Dataset {
                         due_date,
                         expired_date,
                         principal,
-                        num_of_day_late};
+                        num_of_day_late,
+                        name,
+                        interest,
+                        penalty};
                 rowOverdueSmallerThirty_DSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOverdueSmallerThirty_DSRow);
                 return rowOverdueSmallerThirty_DSRow;
@@ -497,7 +530,7 @@ namespace Report.Dataset {
             internal void InitVars() {
                 this.columncustomer_name = base.Columns["customer_name"];
                 this.columnwarehouse = base.Columns["warehouse"];
-                this.columncontract_no = base.Columns["contract_no"];
+                this.columncontract_code = base.Columns["contract_code"];
                 this.columncar = base.Columns["car"];
                 this.columndisbursement_date = base.Columns["disbursement_date"];
                 this.columnpawn_price = base.Columns["pawn_price"];
@@ -506,6 +539,9 @@ namespace Report.Dataset {
                 this.columnexpired_date = base.Columns["expired_date"];
                 this.columnprincipal = base.Columns["principal"];
                 this.columnnum_of_day_late = base.Columns["num_of_day_late"];
+                this.columnname = base.Columns["name"];
+                this.columninterest = base.Columns["interest"];
+                this.columnpenalty = base.Columns["penalty"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -515,8 +551,8 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columncustomer_name);
                 this.columnwarehouse = new global::System.Data.DataColumn("warehouse", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnwarehouse);
-                this.columncontract_no = new global::System.Data.DataColumn("contract_no", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontract_no);
+                this.columncontract_code = new global::System.Data.DataColumn("contract_code", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontract_code);
                 this.columncar = new global::System.Data.DataColumn("car", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncar);
                 this.columndisbursement_date = new global::System.Data.DataColumn("disbursement_date", typeof(string), null, global::System.Data.MappingType.Element);
@@ -533,6 +569,12 @@ namespace Report.Dataset {
                 base.Columns.Add(this.columnprincipal);
                 this.columnnum_of_day_late = new global::System.Data.DataColumn("num_of_day_late", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnum_of_day_late);
+                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname);
+                this.columninterest = new global::System.Data.DataColumn("interest", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columninterest);
+                this.columnpenalty = new global::System.Data.DataColumn("penalty", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpenalty);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -708,17 +750,18 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contract_no {
+            public string contract_code {
                 get {
                     try {
-                        return ((string)(this[this.tableOverdueSmallerThirty_DS.contract_noColumn]));
+                        return ((string)(this[this.tableOverdueSmallerThirty_DS.contract_codeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'contract_no\' in table \'OverdueSmallerThirty_DS\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'contract_code\' in table \'OverdueSmallerThirty_DS\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableOverdueSmallerThirty_DS.contract_noColumn] = value;
+                    this[this.tableOverdueSmallerThirty_DS.contract_codeColumn] = value;
                 }
             }
             
@@ -856,6 +899,54 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string name {
+                get {
+                    try {
+                        return ((string)(this[this.tableOverdueSmallerThirty_DS.nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'name\' in table \'OverdueSmallerThirty_DS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOverdueSmallerThirty_DS.nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string interest {
+                get {
+                    try {
+                        return ((string)(this[this.tableOverdueSmallerThirty_DS.interestColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'interest\' in table \'OverdueSmallerThirty_DS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOverdueSmallerThirty_DS.interestColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string penalty {
+                get {
+                    try {
+                        return ((string)(this[this.tableOverdueSmallerThirty_DS.penaltyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'penalty\' in table \'OverdueSmallerThirty_DS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOverdueSmallerThirty_DS.penaltyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Iscustomer_nameNull() {
                 return this.IsNull(this.tableOverdueSmallerThirty_DS.customer_nameColumn);
             }
@@ -880,14 +971,14 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Iscontract_noNull() {
-                return this.IsNull(this.tableOverdueSmallerThirty_DS.contract_noColumn);
+            public bool Iscontract_codeNull() {
+                return this.IsNull(this.tableOverdueSmallerThirty_DS.contract_codeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setcontract_noNull() {
-                this[this.tableOverdueSmallerThirty_DS.contract_noColumn] = global::System.Convert.DBNull;
+            public void Setcontract_codeNull() {
+                this[this.tableOverdueSmallerThirty_DS.contract_codeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -984,6 +1075,42 @@ namespace Report.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setnum_of_day_lateNull() {
                 this[this.tableOverdueSmallerThirty_DS.num_of_day_lateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsnameNull() {
+                return this.IsNull(this.tableOverdueSmallerThirty_DS.nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetnameNull() {
+                this[this.tableOverdueSmallerThirty_DS.nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsinterestNull() {
+                return this.IsNull(this.tableOverdueSmallerThirty_DS.interestColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetinterestNull() {
+                this[this.tableOverdueSmallerThirty_DS.interestColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IspenaltyNull() {
+                return this.IsNull(this.tableOverdueSmallerThirty_DS.penaltyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetpenaltyNull() {
+                this[this.tableOverdueSmallerThirty_DS.penaltyColumn] = global::System.Convert.DBNull;
             }
         }
         

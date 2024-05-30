@@ -1,4 +1,5 @@
 ﻿using Microsoft.Reporting.WebForms;
+using Microsoft.ReportingServices.ReportProcessing.ReportObjectModel;
 using MySql.Data.MySqlClient;
 using Report.Models;
 using Report.Utils;
@@ -17,6 +18,7 @@ namespace Report.Accounting
 
         private DBConnect db = new DBConnect();
         public string fromDate, toDate;
+        static List<Currency> currencyList;
         public string format = "dd/MM/yyyy";
         public string dateFromError = "", dateToError = "";
         protected void Page_Load(object sender, EventArgs e)
@@ -28,6 +30,7 @@ namespace Report.Accounting
                 DataHelper.populateBranchDDL(ddBranchName, DataHelper.getUserId());
                 dtpFromDate.Text = date;
                 dtpToDate.Text = date;
+                currencyList = DataHelper.populateCurrencyDDL(ddCurrency);
             }
 
         }
@@ -37,6 +40,7 @@ namespace Report.Accounting
             reportParameters.Add(new ReportParameter("Branch", ddBranchName.SelectedItem.Text));
             reportParameters.Add(new ReportParameter("FromDate", DateTime.ParseExact(dtpFromDate.Text, format, null).ToString("dd-MMM-yyyy")));
             reportParameters.Add(new ReportParameter("ToDate", DateTime.ParseExact(dtpToDate.Text, format, null).ToString("dd-MMM-yyyy")));
+            reportParameters.Add(new ReportParameter("Currency", ddCurrency.SelectedItem.Text));
 
             var ds = new ReportDataSource("BalanceSheetByMonthDS", dt);
 
@@ -70,6 +74,7 @@ namespace Report.Accounting
             procedureList.Add(item: new Procedure() { field_name = "@pBranch", sql_db_type = MySqlDbType.VarChar, value_name = ddBranchName.SelectedItem.Value });
             procedureList.Add(item: new Procedure() { field_name = "@pFRDT", sql_db_type = MySqlDbType.Date, value_name = fromDate });
             procedureList.Add(item: new Procedure() { field_name = "@pTODT", sql_db_type = MySqlDbType.Date, value_name = toDate });
+            procedureList.Add(item: new Procedure() { field_name = "pCURRENCY", sql_db_type = MySqlDbType.VarChar, value_name = ddCurrency.SelectedItem.Value });
 
             DataTable DT = db.getProcedureDataTable(PS_BSM, procedureList);
 

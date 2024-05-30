@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Balance Sheet By Period" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BalanceSheetByMonth.aspx.cs" Inherits="Report.Accounting.BalanceSheetByPeriod" %>
+﻿<%@ Page Title="Balance Sheet By Month" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BalanceSheetByMonth.aspx.cs" Inherits="Report.Accounting.BalanceSheetByPeriod" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
@@ -38,6 +38,11 @@
                         ValidationExpression="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$"></asp:RegularExpressionValidator>
                     <span style="color: red"><%=dateToError %></span>
                 </div>
+                 <div class="col-sm-2 form-group">
+                     <label>Currency:</label>
+                     <asp:DropDownList ID="ddCurrency" runat="server" CssClass="form-control input-sm">
+                     </asp:DropDownList>
+                 </div>
                 <div class="form-group ml16">
                     <div>
                         <label>&nbsp;</label>
