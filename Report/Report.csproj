@@ -297,6 +297,17 @@
     <Content Include="Dataset\BalanceSheetByMonth.xsc">
       <DependentUpon>BalanceSheetByMonth.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\ArrearReport.xsc">
+      <DependentUpon>ArrearReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\ArrearReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArrearReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\ArrearReport.xss">
+      <DependentUpon>ArrearReport.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\BalanceSheetByMonth.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -1259,6 +1270,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AllContractList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ArrearReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArrearReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\BalanceSheetByMonth.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -279,7 +279,7 @@ namespace Report.Dataset {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class OverdueSmallerThirty_DSDataTable : global::System.Data.TypedTableBase<OverdueSmallerThirty_DSRow> {
             
-            private global::System.Data.DataColumn columncustomer_name;
+            private global::System.Data.DataColumn columncustomer_name_kh;
             
             private global::System.Data.DataColumn columnwarehouse;
             
@@ -342,9 +342,9 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn customer_nameColumn {
+            public global::System.Data.DataColumn customer_name_khColumn {
                 get {
-                    return this.columncustomer_name;
+                    return this.columncustomer_name_kh;
                 }
             }
             
@@ -489,10 +489,10 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OverdueSmallerThirty_DSRow AddOverdueSmallerThirty_DSRow(string customer_name, string warehouse, string contract_code, string car, string disbursement_date, string pawn_price, string credit_balance, string due_date, string expired_date, string principal, string num_of_day_late, string name, string interest, string penalty) {
+            public OverdueSmallerThirty_DSRow AddOverdueSmallerThirty_DSRow(string customer_name_kh, string warehouse, string contract_code, string car, string disbursement_date, string pawn_price, string credit_balance, string due_date, string expired_date, string principal, string num_of_day_late, string name, string interest, string penalty) {
                 OverdueSmallerThirty_DSRow rowOverdueSmallerThirty_DSRow = ((OverdueSmallerThirty_DSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        customer_name,
+                        customer_name_kh,
                         warehouse,
                         contract_code,
                         car,
@@ -528,7 +528,7 @@ namespace Report.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columncustomer_name = base.Columns["customer_name"];
+                this.columncustomer_name_kh = base.Columns["customer_name_kh"];
                 this.columnwarehouse = base.Columns["warehouse"];
                 this.columncontract_code = base.Columns["contract_code"];
                 this.columncar = base.Columns["car"];
@@ -547,8 +547,8 @@ namespace Report.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columncustomer_name = new global::System.Data.DataColumn("customer_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncustomer_name);
+                this.columncustomer_name_kh = new global::System.Data.DataColumn("customer_name_kh", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_name_kh);
                 this.columnwarehouse = new global::System.Data.DataColumn("warehouse", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnwarehouse);
                 this.columncontract_code = new global::System.Data.DataColumn("contract_code", typeof(string), null, global::System.Data.MappingType.Element);
@@ -717,18 +717,18 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string customer_name {
+            public string customer_name_kh {
                 get {
                     try {
-                        return ((string)(this[this.tableOverdueSmallerThirty_DS.customer_nameColumn]));
+                        return ((string)(this[this.tableOverdueSmallerThirty_DS.customer_name_khColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'customer_name\' in table \'OverdueSmallerThirty_DS\' is DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_name_kh\' in table \'OverdueSmallerThirty_DS\' is DBN" +
+                                "ull.", e);
                     }
                 }
                 set {
-                    this[this.tableOverdueSmallerThirty_DS.customer_nameColumn] = value;
+                    this[this.tableOverdueSmallerThirty_DS.customer_name_khColumn] = value;
                 }
             }
             
@@ -947,14 +947,14 @@ namespace Report.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Iscustomer_nameNull() {
-                return this.IsNull(this.tableOverdueSmallerThirty_DS.customer_nameColumn);
+            public bool Iscustomer_name_khNull() {
+                return this.IsNull(this.tableOverdueSmallerThirty_DS.customer_name_khColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setcustomer_nameNull() {
-                this[this.tableOverdueSmallerThirty_DS.customer_nameColumn] = global::System.Convert.DBNull;
+            public void Setcustomer_name_khNull() {
+                this[this.tableOverdueSmallerThirty_DS.customer_name_khColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
