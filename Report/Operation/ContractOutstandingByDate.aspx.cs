@@ -52,12 +52,14 @@ namespace Report.Operation
                 return;
             }
 
+            var sql = "ContractLoanOS";
+
             List<Procedure> parameters = new List<Procedure>();
             parameters.Add(item: new Procedure() { field_name = "@branch", sql_db_type = MySqlDbType.VarChar, value_name = ddBranchName.SelectedItem.Value });
             parameters.Add(item: new Procedure() { field_name = "@frDate", sql_db_type = MySqlDbType.VarChar, value_name = fromDate });
             parameters.Add(item: new Procedure() { field_name = "@toDate", sql_db_type = MySqlDbType.VarChar, value_name = toDate });
 
-            DataTable dt = db.getProcedureDataTable("ContractLoanOS", parameters);
+            DataTable dt = db.getProcedureDataTable(sql, parameters);
             GenerateReport(dt);
 
         }

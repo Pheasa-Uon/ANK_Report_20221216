@@ -97,12 +97,14 @@ namespace Report.Utils
         {
             MySqlCommand cmd = new MySqlCommand(procedureName, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter();
+            
             DataTable dt = new DataTable();
                 foreach (Procedure procedure in parameters)
                 {
                     cmd.Parameters.Add(procedure.field_name, procedure.sql_db_type).Value = procedure.value_name; 
                 }
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandTimeout = 1200;
                 adapter.SelectCommand = cmd;
                 adapter.Fill(dt);
             return dt;
