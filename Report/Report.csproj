@@ -946,7 +946,7 @@
     <Content Include="Dataset\IncomeStatementByDate.xss">
       <DependentUpon>IncomeStatementByDate.xsd</DependentUpon>
     </Content>
-    <Content Include="Operation\CollectionSheet.rdlc">
+    <Content Include="Operation\ExpectRepayment.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Operation\CustomerList.rdlc">
@@ -1006,7 +1006,7 @@
     <Content Include="Operation\BranchProductivityAsOf.aspx" />
     <Content Include="Operation\BranchProductivityConsolidate.aspx" />
     <Content Include="Operation\BranchProductivityOnDate.aspx" />
-    <Content Include="Operation\CollectionSheet.aspx" />
+    <Content Include="Operation\ExpectRepayment.aspx" />
     <Content Include="Operation\COProductivity.aspx" />
     <Content Include="Operation\CustomerList.aspx" />
     <Content Include="Operation\LateReport.aspx" />
@@ -1776,12 +1776,12 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs" />
-    <Compile Include="Operation\CollectionSheet.aspx.cs">
-      <DependentUpon>CollectionSheet.aspx</DependentUpon>
+    <Compile Include="Operation\ExpectRepayment.aspx.cs">
+      <DependentUpon>ExpectRepayment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Operation\CollectionSheet.aspx.designer.cs">
-      <DependentUpon>CollectionSheet.aspx</DependentUpon>
+    <Compile Include="Operation\ExpectRepayment.aspx.designer.cs">
+      <DependentUpon>ExpectRepayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operation\COProductivity.aspx.cs">
       <DependentUpon>COProductivity.aspx</DependentUpon>

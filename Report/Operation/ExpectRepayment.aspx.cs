@@ -35,7 +35,7 @@ namespace Report.Operation
             reportParameters.Add(new ReportParameter("ToDate", DateTime.ParseExact(dtpToDate.Text, format, null).ToString("dd-MMM-yyyy")));
 
             var _collectionSheetlist = new ReportDataSource("CollectionSheetDS", collectionSheetDT);
-            DataHelper.generateOperationReport(ReportViewer1, "CollectionSheet", reportParameters, _collectionSheetlist);
+            DataHelper.generateOperationReport(ReportViewer1, "ExpectRepayment", reportParameters, _collectionSheetlist);
         }
 
         protected void btnView_Click(object sender, EventArgs e)
