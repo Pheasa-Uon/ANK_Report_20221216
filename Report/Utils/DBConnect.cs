@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data;
+using Report.Operation;
+using Org.BouncyCastle.Crypto.Prng.Drbg;
 
 namespace Report.Utils
 {
@@ -336,6 +338,40 @@ namespace Report.Utils
                 id = Convert.ToInt32(r["id"]),
                 transaction_type = (string)r["transaction_type"]
             }).ToList();
+
+            return list;
+        }
+
+        public List<CustomerNameList> GetCustomername()
+        {
+            string query = "select id,concat(customer_code,' - ',customer_name) customer_name from customer where b_status = 1";
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            var list = dt.AsEnumerable().Select(r => new CustomerNameList()
+            {
+                id = Convert.ToInt32(r["id"]),
+                customer_name = (string)r["customer_name"]
+            }).ToList();
+            return list;
+        }
+
+
+
+        public List<CustomerNameList> GetCustomernameALL(int officer_id)
+        {
+            string query = "select cus.id,concat(customer_code,' - ',customer_name) customer_name from customer cus left join contract ct on ct.customer_id = cus.id where ct.pawn_officer_id = "+ officer_id + " group by customer_name";
+            MySqlCommand cmd = new MySqlCommand(query,connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            var list = dt.AsEnumerable().Select(r => new CustomerNameList()
+            {
+                id = Convert.ToInt32(r["id"]),
+                customer_name = (string)r["customer_name"]
+            }
+            ).ToList();
 
             return list;
         }

@@ -562,6 +562,22 @@ namespace Report.Utils
             reportViewer.LocalReport.Refresh();
         }
 
+        public static void generateLoanReports(ReportViewer reportViewer, string reportName, Microsoft.Reporting.WebForms.ReportParameterCollection reportParameterCollection, params ReportDataSource[] reportDataSources)
+        {
+            reportViewer.SizeToReportContent = true;
+            reportViewer.LocalReport.ReportPath = HttpContext.Current.Server.MapPath(String.Format("~/LoanReports/{0}.rdlc", reportName));
+            reportViewer.LocalReport.DataSources.Clear();
+            //Add Default Parameter CompanyName
+            reportParameterCollection.Add(new ReportParameter("CompanyName", DataHelper.getCompanyName()));
+            reportViewer.LocalReport.SetParameters(reportParameterCollection);
+
+            foreach (var item in reportDataSources)
+            {
+                reportViewer.LocalReport.DataSources.Add(item);
+            }
+            reportViewer.LocalReport.Refresh();
+        }
+
         public static String getCompanyName()
         {
             if (HttpContext.Current.Session["company_name"] != null)
@@ -576,5 +592,46 @@ namespace Report.Utils
                 return res;
             }
         }
+
+        public static void customerGetName(DropDownList ddl)
+        {
+            DBConnect db = new DBConnect();
+            var customerListname = db.GetCustomername();
+            ddl.DataTextField = "customer_name";
+            ddl.DataValueField = "id";
+            ddl.DataSource = customerListname;
+            ddl.DataBind();
+            ddl.Items.Insert(0, new ListItem("--- Select a Value ---", "0"));
+            ddl.SelectedIndex = 0;
+        }
+
+
+
+        public static void customerGetALL(DropDownList ddl,int officer_id)
+        {
+            DBConnect db = new DBConnect();
+            var customerListALL = db.GetCustomernameALL(officer_id);
+            ddl.DataTextField = "customer_name";
+            ddl.DataValueField = "id";
+            ddl.DataSource = customerListALL;
+            ddl.DataBind();
+            if (customerListALL.Count > 1)
+            {
+                ddl.Items.Insert(0, new ListItem("-- ALL --", "ALL"));
+            }
+        }
+
+        public static void customerGet(DropDownList ddl, int officer_id)
+        {
+            DBConnect db = new DBConnect();
+            var customerListALL = db.GetCustomernameALL( officer_id);
+            ddl.DataTextField = "customer_name";
+            ddl.DataValueField = "id";
+            ddl.DataSource = customerListALL;
+            ddl.DataBind();
+            ddl.Items.Insert(0, new ListItem("--- Select a Value ---", "0"));
+            ddl.SelectedIndex = 0;
+        }
     }
+
 }   

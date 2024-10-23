@@ -191,6 +191,17 @@
     <Content Include="Images\midas.png" />
     <Content Include="Images\profile.png" />
     <Content Include="Images\ui-icons_444444_256x240.png" />
+    <Content Include="LoanReports\AllLoanActive.aspx" />
+    <Content Include="LoanReports\AllLoanClientActiveByGarageOwner.aspx" />
+    <Content Include="LoanReports\LoanActiveByClientName.aspx" />
+    <Content Include="LoanReports\LoanActiveByPo.aspx" />
+    <Content Include="LoanReports\LoanDisbursementReportAsofDate.aspx" />
+    <Content Include="LoanReports\LoanFullSettleByDate.aspx" />
+    <Content Include="LoanReports\LoanFullSettleClient.aspx" />
+    <Content Include="LoanReports\LoanFullSettleCollateralByDate.aspx" />
+    <Content Include="LoanReports\LoanReplaceReportByMonth.aspx" />
+    <Content Include="LoanReports\LoanTopUpAsofDate.aspx" />
+    <Content Include="LoanReports\StockCarsinAMPDate.aspx" />
     <Content Include="Operation\AllContractList.aspx" />
     <Content Include="Operation\BranchProductivity.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -299,6 +310,17 @@
     </Content>
     <Content Include="Dataset\ArrearReport.xsc">
       <DependentUpon>ArrearReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\AllActive.xsc">
+      <DependentUpon>AllActive.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\AllActive.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllActive.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\AllActive.xss">
+      <DependentUpon>AllActive.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\ArrearReport.xsd">
       <SubType>Designer</SubType>
@@ -1266,6 +1288,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccrualInterest.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\AllActive.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllActive.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\AllContractList.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1545,6 +1572,84 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UnearnedRevenue.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LoanReports\AllLoanActive.aspx.cs">
+      <DependentUpon>AllLoanActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\AllLoanActive.aspx.designer.cs">
+      <DependentUpon>AllLoanActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\AllLoanClientActiveByGarageOwner.aspx.cs">
+      <DependentUpon>AllLoanClientActiveByGarageOwner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\AllLoanClientActiveByGarageOwner.aspx.designer.cs">
+      <DependentUpon>AllLoanClientActiveByGarageOwner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanActiveByClientName.aspx.cs">
+      <DependentUpon>LoanActiveByClientName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanActiveByClientName.aspx.designer.cs">
+      <DependentUpon>LoanActiveByClientName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanActiveByPo.aspx.cs">
+      <DependentUpon>LoanActiveByPo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanActiveByPo.aspx.designer.cs">
+      <DependentUpon>LoanActiveByPo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanDisbursementReportAsofDate.aspx.cs">
+      <DependentUpon>LoanDisbursementReportAsofDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanDisbursementReportAsofDate.aspx.designer.cs">
+      <DependentUpon>LoanDisbursementReportAsofDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanFullSettleByDate.aspx.cs">
+      <DependentUpon>LoanFullSettleByDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanFullSettleByDate.aspx.designer.cs">
+      <DependentUpon>LoanFullSettleByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanFullSettleClient.aspx.cs">
+      <DependentUpon>LoanFullSettleClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanFullSettleClient.aspx.designer.cs">
+      <DependentUpon>LoanFullSettleClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanFullSettleCollateralByDate.aspx.cs">
+      <DependentUpon>LoanFullSettleCollateralByDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanFullSettleCollateralByDate.aspx.designer.cs">
+      <DependentUpon>LoanFullSettleCollateralByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanReplaceReportByMonth.aspx.cs">
+      <DependentUpon>LoanReplaceReportByMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanReplaceReportByMonth.aspx.designer.cs">
+      <DependentUpon>LoanReplaceReportByMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\LoanTopUpAsofDate.aspx.cs">
+      <DependentUpon>LoanTopUpAsofDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\LoanTopUpAsofDate.aspx.designer.cs">
+      <DependentUpon>LoanTopUpAsofDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReports\StockCarsinAMPDate.aspx.cs">
+      <DependentUpon>StockCarsinAMPDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanReports\StockCarsinAMPDate.aspx.designer.cs">
+      <DependentUpon>StockCarsinAMPDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerNameList.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\Currency.cs" />
     <Compile Include="Models\GL.cs" />
@@ -2019,6 +2124,19 @@
     <Content Include="Accounting\BalanceSheetByMonth.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoanReports\AllLoanActive.rdlc" />
+    <EmbeddedResource Include="LoanReports\AllLoanClientActiveByGarageOwner.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanActiveByClientName.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanActiveByPo.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanDisbursementReportAsofDate.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanFullSettleByDate.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanFullSettleClient.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanFullSettleCollateralByDate.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanReplaceReportByMonth.rdlc" />
+    <EmbeddedResource Include="LoanReports\LoanTopUpAsofDate.rdlc" />
+    <EmbeddedResource Include="LoanReports\StockCarsinAMPDate.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
