@@ -342,9 +342,9 @@ namespace Report.Utils
             return list;
         }
 
-        public List<CustomerNameList> GetCustomername()
+        public List<CustomerNameList> GetCustomerNameALL()
         {
-            string query = "select id,concat(customer_code,' - ',customer_name) customer_name from customer where b_status = 1";
+            string query = "select id,concat(customer_code,' - ',customer_name) name from customer where b_status = 1";
             MySqlCommand cmd = new MySqlCommand(query, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -352,16 +352,16 @@ namespace Report.Utils
             var list = dt.AsEnumerable().Select(r => new CustomerNameList()
             {
                 id = Convert.ToInt32(r["id"]),
-                customer_name = (string)r["customer_name"]
+                name = (string)r["name"]
             }).ToList();
             return list;
         }
 
 
 
-        public List<CustomerNameList> GetCustomernameALL(int officer_id)
+        public List<CustomerNameList> GetCustomeName(int officer_id)
         {
-            string query = "select cus.id,concat(customer_code,' - ',customer_name) customer_name from customer cus left join contract ct on ct.customer_id = cus.id where ct.pawn_officer_id = "+ officer_id + " group by customer_name";
+            string query = "select cus.id,concat(customer_code,' - ',customer_name) name from customer cus left join contract ct on ct.customer_id = cus.id where ct.pawn_officer_id = "+ officer_id + " group by customer_name";
             MySqlCommand cmd = new MySqlCommand(query,connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -369,7 +369,7 @@ namespace Report.Utils
             var list = dt.AsEnumerable().Select(r => new CustomerNameList()
             {
                 id = Convert.ToInt32(r["id"]),
-                customer_name = (string)r["customer_name"]
+                name = (string)r["name"]
             }
             ).ToList();
 

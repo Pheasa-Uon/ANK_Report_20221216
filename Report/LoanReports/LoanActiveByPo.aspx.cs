@@ -64,15 +64,15 @@ namespace Report.LoanReports
         {
             if(ddOfficer.SelectedItem.Value != "")
             {
-                if (ddBranchName.SelectedItem.Value == "ALL")
+                if (ddOfficer.SelectedItem.Value == "0")
                 {
                     ddCustomer.Enabled = true;
-                    DataHelper.customerGetALL(ddCustomer,Convert.ToInt32(ddOfficer.SelectedItem.Value));
+                    DataHelper.populateCustomerDDLAll(ddCustomer);
                 }
                 else
                 {
                     ddCustomer.Enabled = true;
-                    DataHelper.customerGet(ddCustomer, Convert.ToInt32(ddOfficer.SelectedItem.Value));
+                    DataHelper.populateCustomerDDL(ddCustomer, Convert.ToInt32(ddOfficer.SelectedItem.Value));
                 }
             }
             else
@@ -83,12 +83,11 @@ namespace Report.LoanReports
             }
         }
 
-
-
         protected void btnView_Click(object sender, EventArgs e)
         {
             string customer =null;
             string office =null;
+
             if (ddCustomer.SelectedItem.Value != "0" && ddOfficer.SelectedItem.Value != "0")
             {
                 customer = ddCustomer.SelectedItem.Value;
@@ -97,7 +96,7 @@ namespace Report.LoanReports
             var spd = "";
             List<Procedure> procedureList = new List<Procedure>();
             procedureList.Add(item: new Procedure() { field_name = "@pBranch", sql_db_type = MySqlDbType.VarChar, value_name = ddBranchName.SelectedItem.Value });
-            procedureList.Add(item: new Procedure() { field_name = "@pOfficer", sql_db_type = MySqlDbType.VarChar, value_name = customer });
+            procedureList.Add(item: new Procedure() { field_name = "@pOfficer", sql_db_type = MySqlDbType.VarChar, value_name = office });
             procedureList.Add(item: new Procedure() { field_name = "@pCustomer", sql_db_type = MySqlDbType.VarChar, value_name = customer });
 
 

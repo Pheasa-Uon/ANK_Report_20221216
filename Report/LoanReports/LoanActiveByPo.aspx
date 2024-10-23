@@ -30,7 +30,7 @@
                  <div class="col-sm-2 form-group">
                      <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
                          <Triggers>
-                             <asp:AsyncPostBackTrigger ControlID="ddBranchName" />
+                             <asp:AsyncPostBackTrigger ControlID="ddOfficer" />
                          </Triggers>
                          <ContentTemplate>
                              <label>Customer Name:</label>

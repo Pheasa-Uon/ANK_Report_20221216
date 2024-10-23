@@ -8,7 +8,7 @@ namespace Report.Models
     public class CustomerNameList
     {
         public int id { get; set; }
-        public string customer_name { get; set; }
+        public string name { get; set; }
 
     }
 }

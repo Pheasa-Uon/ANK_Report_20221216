@@ -38,12 +38,12 @@ namespace Report.LoanReports
                 if (ddBranchName.SelectedItem.Value == "ALL")
                 {
                     ddCustomer.Enabled = true;
-                    DataHelper.customerGetName(ddCustomer);
+                    DataHelper.populateCustomerDDLAll(ddCustomer);
                 }
                 else
                 {
                     ddCustomer.Enabled = true;
-                    DataHelper.customerGetName(ddCustomer);
+                    DataHelper.populateCustomerDDLAll(ddCustomer);
                 }
 
             }
