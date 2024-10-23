@@ -21,19 +21,18 @@
                         </Triggers>
                         <ContentTemplate>
                             <label>Po Name:</label>
-                            <asp:DropDownList ID="ddOfficer" runat="server" OnSelectedIndexChanged ="ddOffcer_SelectedIndexChanged" CssClass="form-control input-sm" Enabled="false">
+                            <asp:DropDownList ID="ddOfficer" runat="server" AutoPostBack="true" OnSelectedIndexChanged ="ddOffcer_SelectedIndexChanged" CssClass="form-control input-sm">
                             </asp:DropDownList>
                         </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
-
                  <div class="col-sm-2 form-group">
                      <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
                          <Triggers>
                              <asp:AsyncPostBackTrigger ControlID="ddOfficer" />
                          </Triggers>
                          <ContentTemplate>
-                             <label>Customer Name:</label>
+                             <label>Client Name:</label>
                              <asp:DropDownList ID="ddCustomer" runat="server" CssClass="form-control input-sm" Enabled="false">
                              </asp:DropDownList>
                          </ContentTemplate>

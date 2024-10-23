@@ -243,7 +243,7 @@ namespace Report.Utils
         //Get Officer Statement
         public List<Officer> GetOfficerNames(int branch_id)
         {
-            string query = "SELECT id, name FROM staff_info WHERE b_status=1 and branch_id =" + branch_id;
+            string query = "SELECT id, name FROM staff_info WHERE b_status=1 and position_id in (3,17,18,19,23,33) and branch_id =" + branch_id;
             MySqlCommand cmd = new MySqlCommand(query, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -260,7 +260,7 @@ namespace Report.Utils
         //Get Officer Statement
         public List<Officer> GetOfficerNamesAll()
         {
-            string query = "SELECT id, name FROM staff_info WHERE b_status=1;";
+            string query = "SELECT id, name FROM staff_info WHERE b_status=1 and position_id in (3,17,18,19,23,33);";
             MySqlCommand cmd = new MySqlCommand(query, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -361,7 +361,7 @@ namespace Report.Utils
 
         public List<CustomerNameList> GetCustomeName(int officer_id)
         {
-            string query = "select cus.id,concat(customer_code,' - ',customer_name) name from customer cus left join contract ct on ct.customer_id = cus.id where ct.pawn_officer_id = "+ officer_id + " group by customer_name";
+            string query = "select cus.id,concat(customer_code,' - ',customer_name) name from customer cus left join contract ct on ct.customer_id = cus.id where cus.b_status = 1 and ct.pawn_officer_id = " + officer_id + " group by customer_name";
             MySqlCommand cmd = new MySqlCommand(query,connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
