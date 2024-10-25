@@ -361,7 +361,7 @@ namespace Report.Utils
 
         public List<CustomerNameList> GetCustomeName(int officer_id)
         {
-            string query = "select cus.id,concat(customer_code,' - ',customer_name) name from customer cus left join contract ct on ct.customer_id = cus.id where cus.b_status = 1 and ct.pawn_officer_id = " + officer_id + " group by customer_name";
+            string query = "select cus.id,concat(cus.customer_code,' - ',cus.customer_name) name from customer cus left join contract ct on ct.customer_id = cus.id where cus.b_status = 1 and ct.pawn_officer_id = " + officer_id + " group by cus.id";
             MySqlCommand cmd = new MySqlCommand(query,connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
