@@ -14,6 +14,17 @@
                         ErrorMessage="* Please select branch" ForeColor="Red" Font-Names="Tahoma" Display="Dynamic">
                     </asp:RequiredFieldValidator>
                 </div>
+                 <div class="col-sm-2 form-group">
+                     <label>As Of Date:</label>
+                     <asp:TextBox ID="dtpAsOfDate" runat="server" class="form-control input-sm datepick"></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="dtpAsOfDate"
+                         ErrorMessage="* Please select date" ForeColor="Red" Font-Names="Tahoma" Display="Dynamic">
+                     </asp:RequiredFieldValidator>
+                     <asp:RegularExpressionValidator ID="reqValidate" runat="server" ControlToValidate="dtpAsOfDate"
+                         ErrorMessage="* Wrong date formate" ForeColor="Red" Font-Names="Tahoma" Display="Dynamic"
+                         ValidationExpression="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$"></asp:RegularExpressionValidator>
+                     <span style="color: red"><%=dateFromError %></span>
+                 </div>
                 <div class="form-group ml16">
                     <div>
                         <label>&nbsp;</label>

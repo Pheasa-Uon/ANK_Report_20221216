@@ -322,6 +322,28 @@
     <Content Include="Dataset\AllActive.xss">
       <DependentUpon>AllActive.xsd</DependentUpon>
     </Content>
+    <Content Include="Dataset\AllLoanActive.xsc">
+      <DependentUpon>AllLoanActive.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\AllLoanActive.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllLoanActive.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\AllLoanActive.xss">
+      <DependentUpon>AllLoanActive.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\AllLoanClientActiveByGarageOwner.xsc">
+      <DependentUpon>AllLoanClientActiveByGarageOwner.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\AllLoanClientActiveByGarageOwner.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllLoanClientActiveByGarageOwner.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\AllLoanClientActiveByGarageOwner.xss">
+      <DependentUpon>AllLoanClientActiveByGarageOwner.xsd</DependentUpon>
+    </Content>
     <None Include="Dataset\ArrearReport.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -663,6 +685,17 @@
     </Content>
     <Content Include="Dataset\LoanExpectedRepayment.xsc">
       <DependentUpon>LoanExpectedRepayment.xsd</DependentUpon>
+    </Content>
+    <Content Include="Dataset\LoanActiveByClientName.xsc">
+      <DependentUpon>LoanActiveByClientName.xsd</DependentUpon>
+    </Content>
+    <None Include="Dataset\LoanActiveByClientName.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanActiveByClientName.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Dataset\LoanActiveByClientName.xss">
+      <DependentUpon>LoanActiveByClientName.xsd</DependentUpon>
     </Content>
     <None Include="Dataset\LoanExpectedRepayment.xsd">
       <SubType>Designer</SubType>
@@ -1298,6 +1331,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AllContractList.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\AllLoanActive.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllLoanActive.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\AllLoanClientActiveByGarageOwner.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllLoanClientActiveByGarageOwner.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\ArrearReport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1453,6 +1496,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LateReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\LoanActiveByClientName.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanActiveByClientName.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\LoanExpectedRepayment.Designer.cs">
       <AutoGen>True</AutoGen>
